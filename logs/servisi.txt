@@ -1,0 +1,94 @@
+09.12.2020 17:31:54-Kića Kićanović kića@gmail.com je poslao zahtev za servisiranje modela sa ID 7 za kvar sa ID 6
+09.12.2020 13:44:43-Boris Perković je odbacio test vožnju modela sa ID 7
+09.12.2020 13:44:31-Boris Perković je prihvatio test vožnju modela sa ID 8
+09.12.2020 13:40:50-Boris Perković je odbacio servis modela sa ID 21
+09.12.2020 13:40:22-Boris Perković je prihvatio servis modela sa ID 22
+09.12.2020 13:18:47-Boban Rajović bobe@gmail.com je poslao zahtev za servisiranje modela sa ID 6 za kvar sa ID 1
+09.12.2020 13:16:38-Mića mmića@gmail.com mmića@gmail.com je poslao zahtev za servisiranje modela sa ID 12 za kvar sa ID 3
+09.12.2020 13:13:56-Mića Mićkovic mmića@gmail.com je poslao zahtev za servisiranje modela sa ID 12 za kvar sa ID 3
+08.12.2020 23:20:55-Boris Perković je odbacio test vožnju modela sa ID 6
+08.12.2020 23:20:49-Boris Perković je prihvatio test vožnju modela sa ID 6
+08.12.2020 23:19:55-Boris Perković je odbacio servis modela sa ID 5
+08.12.2020 23:19:50-Boris Perković je prihvatio servis modela sa ID 5
+08.12.2020 23:18:55-Boris Perković je odbacio servis modela sa ID 6
+08.12.2020 23:18:52-Boris Perković je prihvatio servis modela sa ID 6
+08.12.2020 23:18:43-Boris Perković je prihvatio servis modela sa ID 6
+08.12.2020 23:17:39-Boris Perković je prihvatio servis modela sa ID 5
+07.12.2020 21:54:47-Boris Perković je prihvatio servis modela sa ID 19
+07.12.2020 14:42:36-Dragan Stojkovic gagi@gmail.com je poslao zahtev za servisiranje modela sa ID 12 za kvar sa ID 6
+01.12.2020 17:05:52-Alen Prost je odbacio test vožnju modela sa ID 5
+01.12.2020 17:04:55-Alen Prost je odbacio test vožnju modela sa ID 5
+01.12.2020 17:04:48-Alen Prost je prihvatio test vožnju modela sa ID 4
+01.12.2020 17:01:24-Alen Prost je prihvatio test vožnju modela sa ID 2
+01.12.2020 16:53:19-Boris Perković je odbacio test vožnju modela sa ID 1
+01.12.2020 16:53:07-Boris Perković je prihvatio test vožnju modela sa ID 3
+27.11.2020 22:34:01-Boris Perković je prihvatio servis modela sa ID 7
+27.11.2020 22:32:13-Boris Perković je prihvatio servis modela sa ID 3
+27.11.2020 22:32:07-Boris Perković je odbacio servis modela sa ID 3
+27.11.2020 22:32:01-Boris Perković je prihvatio servis modela sa ID 3
+27.11.2020 22:07:42-Boris Perković je odbacio servis modela sa ID 13
+27.11.2020 22:07:35-Boris Perković je prihvatio servis modela sa ID 17
+27.11.2020 22:06:12-Boris Perković je odbacio servis modela sa ID 6
+24.11.2020 14:20:10-Boris Perković je odbacio servis modela sa ID 16
+24.11.2020 14:18:18-Boris Perković je prihvatio servis modela sa ID 15
+24.11.2020 14:17:55-Boris Perković je prihvatio servis modela sa ID 11
+24.11.2020 00:55:45-Boris Perković je prihvatio servis modela sa ID 10
+22.11.2020 20:04:50-Boris Perković je prihvatio servis modela sa ID 12
+21.11.2020 20:28:00-Joca Karburator je prihvatio servis modela sa ID 8
+21.11.2020 20:17:04-Joca Karburator je prihvatio servis modela sa ID 7
+21.11.2020 20:14:52-Joca Karburator je prihvatio servis modela sa ID 5
+21.11.2020 20:06:20-Boris Perković je prihvatio servis modela sa ID 3
+21.11.2020 20:01:08-Boris Perković je prihvatio servis modela sa ID 14
+21.11.2020 19:59:55-Boris Perković je prihvatio servis modela sa ID 9
+21.11.2020 19:57:20-Boris Perković je prihvatio servis modela sa ID 4
+21.11.2020 19:56:08-Boris Perković je prihvatio servis modela sa ID 2
+21.11.2020 19:52:26- je prihvatio servis modela sa ID 4
+21.11.2020 19:48:56- je prihvatio servis modela sa ID 2
+21.11.2020 19:27:15- je prihvatio servis modela sa ID 18
+21.11.2020 19:24:55- je prihvatio servis modela sa ID 18
+21.11.2020 19:23:44- je prihvatio servis modela sa ID 18
+21.11.2020 15:13:16-Igor Perkovic igor@gmail.com je poslao zahtev za servisiranje modela sa ID 6 za kvar sa ID 1
+20.11.2020 13:45:07-budimir kriwokuca bbuda@gmail.com je poslao zahtev za servisiranje modela sa ID 3 za kvar sa ID 5
+18.11.2020 21:31:48-Nikolina Puzovic nina@gmail.com je poslao zahtev za servisiranje modela sa ID 11 za kvar sa ID 3
+18.11.2020 21:19:18-Smilja smiljanic smilja@gmail.com je poslao zahtev za servisiranje modela sa ID 1 za kvar sa ID 1
+18.11.2020 21:18:15-Smilja Smiljanic smilja@gmail.com je poslao zahtev za servisiranje modela sa ID 9 za kvar sa ID 3
+18.11.2020 21:17:14-Smilja Smiljanic smilja@gmail.com je poslao zahtev za servisiranje modela sa ID 9 za kvar sa ID 3
+18.11.2020 21:16:09-ererer rererr rerer je poslao zahtev za servisiranje modela sa ID 1 za kvar sa ID 1
+18.11.2020 21:14:26-Pokusaj Pousavam pouksaj@gmail.com je poslao zahtev za servisiranje modela sa ID 5 za kvar sa ID 3
+18.11.2020 21:11:46-dsadad dasdsadsad dasdsad je poslao zahtev za servisiranje modela sa ID 1 za kvar sa ID 1
+18.11.2020 21:08:51-dsadad dassadsad dadad je poslao zahtev za servisiranje modela sa ID 1 za kvar sa ID 1
+18.11.2020 21:07:55-sadsadasdasd dasdasdasdas asdsadadsad je poslao zahtev za servisiranje modela sa ID 1 za kvar sa ID 1
+18.11.2020 21:07:13-sadsadasdas dasdsadsad dasdsad je poslao zahtev za servisiranje modela sa ID 1 za kvar sa ID 1
+18.11.2020 21:03:39-Vera Verkic verka@gmail.com je poslao zahtev za servisiranje modela sa ID 6 za kvar sa ID 4
+18.11.2020 21:00:52-Vera Verkic verka@gmail.com je poslao zahtev za servisiranje modela sa ID 10 za kvar sa ID 3
+18.11.2020 20:56:06-Vera Verkic vvera@gmail.com je poslao zahtev za servisiranje modela sa ID 9 za kvar sa ID 3
+18.11.2020 20:50:23-Vera Verkic verka@gmail.com je poslao zahtev za servisiranje modela sa ID 10 za kvar sa ID 3
+18.11.2020 20:27:08-dsadad dasdsadas dsadasd je poslao zahtev za servisiranje modela sa ID 1 za kvar sa ID 1
+18.11.2020 20:26:09-dsadsadsad dsadasdasd dsadasdasd je poslao zahtev za servisiranje modela sa ID 1 za kvar sa ID 1
+18.11.2020 20:25:06-dasdasda dasdsadasd dsadadsad je poslao zahtev za servisiranje modela sa ID 1 za kvar sa ID 1
+18.11.2020 20:22:29-dsadad dsdsad sadasd je poslao zahtev za servisiranje modela sa ID 1 za kvar sa ID 1
+18.11.2020 20:22:02-dsadasd dsadsad dasdasd je poslao zahtev za servisiranje modela sa ID 1 za kvar sa ID 1
+18.11.2020 20:21:00-Smilja Smiljanic smilja@gmail.com je poslao zahtev za servisiranje modela sa ID 9 za kvar sa ID 5
+18.11.2020 20:17:50-Vera Verkić vvera@gmail.com je poslao zahtev za servisiranje modela sa ID 5 za kvar sa ID 3
+18.11.2020 20:13:40-Vera Verkic vvera@gmail.com je poslao zahtev za servisiranje modela sa ID 5 za kvar sa ID 3
+18.11.2020 20:06:36-dededed ededede dededdeded je poslao zahtev za servisiranje modela sa ID 1 za kvar sa ID 1
+18.11.2020 20:04:00-ededed edededed dededed je poslao zahtev za servisiranje modela sa ID 1 za kvar sa ID 1
+18.11.2020 19:59:47-Miško Mišković mmisko@gmail.com je poslao zahtev za servisiranje modela sa ID 12 za kvar sa ID 3
+18.11.2020 19:32:59-Miško Mišković misko@gmail.com je poslao zahtev za servisiranje modela sa ID 6 za kvar sa ID 4
+18.11.2020 15:43:21-Mateja Matejic mateja@gmail.com je poslao zahtev za servisiranje modela sa ID 12 za kvar sa ID 3
+18.11.2020 15:38:29-Mateja Matejić mateja@gmail.com je poslao zahtev za servisiranje modela sa ID 11 za kvar sa ID 6
+18.11.2020 15:34:23-MIlica  Milisavljevic milica@gmail.com je poslao zahtev za servisiranje modela sa ID 8 za kvar sa ID 3
+18.11.2020 15:31:17-Milica Milisavljevic milica@gmail.com je poslao zahtev za servisiranje modela sa ID 8 za kvar sa ID 3
+18.11.2020 15:27:46-dsadasd dsadsad dsadsad@gmail.com je poslao zahtev za servisiranje modela sa ID 8 za kvar sa ID 3
+18.11.2020 15:27:15-Milica Vujasinovic milica@gmail.com je poslao zahtev za servisiranje modela sa ID 8 za kvar sa ID 3
+18.11.2020 15:26:01-Milica Bujasinovic milica@gmail.com je poslao zahtev za servisiranje modela sa ID 8 za kvar sa ID 4
+18.11.2020 15:24:41-Milica Vujasinović milica@gmail.com je poslao zahtev za servisiranje modela sa ID 8 za kvar sa ID 3
+18.11.2020 15:23:27-Milica Vujasinović milica@gmail.com je poslao zahtev za servisiranje modela sa ID 8 za kvar sa ID 3
+18.11.2020 15:22:12-Milica Vujasinović milica@gmail.com je poslao zahtev za servisiranje modela sa ID 8 za kvar sa ID 3
+18.11.2020 15:20:47-Marko Marković mare@gmail.com je poslao zahtev za servisiranje modela sa ID 9 za kvar sa ID 4
+18.11.2020 15:06:35-Petar Petrović petar@gmail.com je poslao zahtev za servisiranje modela sa ID 9 za kvar sa ID 7
+18.11.2020 15:04:00-Petar Petrović petar@gmail.com je poslao zahtev za servisiranje modela sa ID 9 za kvar sa ID 7
+12.11.2020 00:04:03-Kristina Čičić kkile@gmail.com je poslao zahtev za servisiranje modela sa ID 7 za kvar sa ID 6
+11.11.2020 23:56:49-Kristina Čičić kkile@gmail.com je poslao zahtev za servisiranje modela sa ID 7 za kvar sa ID 6
+11.11.2020 23:53:09-Kristina Čičić kkile@gmail.com je poslao zahtev za servisiranje modela sa ID 7 za kvar sa ID 6
+30.10.2020 11:53:08-MIlenko Milenkovic mmilenko@gmail.com je poslao zahtev za servisiranje modela sa ID 10 za kvar sa ID 3
