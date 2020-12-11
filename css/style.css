@@ -1,0 +1,826 @@
+/*===================================
+
+-Custom CSS stylesheet,
+-Desktop first,
+-Fully responsive,
+-This website was made in Bootstrap version 4.5,
+-Created by Boris Perkovic,
+-Location: Belgrade, Serbia
+-Graudated work in ITAcademy by LINK group in Belgrade,
+-PHP Web Developer,
+-Created: 2020-10-18
+-borisperkovic89@yahoo.com
+
+====================================*/
+
+/*-----------
+GENERAL
+-----------*/
+
+body{
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding: 0px 15px;
+    color: black;
+    padding-top: 68px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight:900;
+    margin:1em 0 0.5em;
+    color:black;
+}
+
+h1 { font-size:3em;}
+h2 { font-size:2.2em;}
+h3 { font-size:2em;}
+h4 { font-size:1.6em;}
+h5 { font-size:1.4em;}
+h6 { font-size:1.2em;}
+
+a{
+    color: #000;
+}
+a:hover{
+    color:black;
+    text-decoration: underline;
+}
+a:active{
+    color: #fff;
+}
+.parallax-section {
+    background-attachment: fixed !important;
+    background-size: cover !important;
+}
+.modal-backdrop {
+    position:unset !important;
+}
+.btn{
+    background: rgb(165, 163, 163);
+    color: #000;
+    border: none;
+}
+.btn:hover{
+    color: #e4e8e8;
+    background: #000;
+}
+.btn:active{
+    background: rgb(165, 163, 163);
+    color: #000;
+}
+
+/*================
+ HOME PAGE
+=================*/
+
+/*-------------
+ NAVBAR SECTION
+---------------*/
+#navbar{
+    padding: 0px;
+    background-color: #4a4f54;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#navbar .navbar-brand{
+    padding: 0px;
+    margin: 0px;
+}
+#mr-auto a{
+    color: #e4e8e8;
+    padding: 22px 10px;
+}
+#mr-auto a:hover{
+    background: #000;
+    color: #e4e8e8;
+}
+.navbar-nav .nav-link{
+    color: #e4e8e8;
+}
+
+#dropdown_models:hover{
+    color: #000;
+}
+.md-form input{
+    margin-bottom: 25px;
+}
+#navdropdown a{
+    padding: 0px 24px 0px 5px;
+    color: #000;
+}
+#navdropdown a:hover{
+    background: rgb(211, 209, 209);
+    text-decoration: none;
+    color: #000;
+}
+hr.navdropdown{
+    margin: 0px;
+}
+.navimg{
+    width: 94px;
+    height: 55px;
+    margin: 0px;
+}
+.logregbtn{
+    margin: 10px 10px;
+    background: rgb(165, 163, 163);
+    color: #000;
+    border: none;
+}
+.logregbtn:hover{
+    color: #e4e8e8;
+    background: #000;
+}
+.logregbtn:active{
+    background: rgb(165, 163, 163);
+    color: #000;
+}
+/*-------------
+ CAROUSEL SECTION
+---------------*/
+.carousel{
+    padding: 0px;
+    
+}
+.carousel-item{
+    max-height: 900px;
+}
+.carousel-caption{
+    background: rgba(0, 0, 0, 0.315);
+}
+.carousel-caption h3,
+.carousel-caption h5{
+    color: #fff;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    top: calc(50% - 25px);
+}
+.carousel-control-prev{
+    left: 5%;
+}
+.carousel-control-next{
+    right: 5%;
+}
+
+
+/*------------------
+ CENTRAL HEADING 1
+--------------------*/
+
+.central1{
+    background: rgb(223, 221, 221);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    letter-spacing: 2px;
+}
+
+/*------------------
+ HERO SECTION
+--------------------*/
+#hero{
+    background: url('../pics/defender1.jpg') 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+
+/*------------------
+ CENTRAL HEADING 2
+--------------------*/
+
+.central2{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    letter-spacing: 2px;
+}
+
+/*------------------
+ MAIN WITH CARDS
+--------------------*/
+#main{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background: rgb(223, 221, 221);
+}
+.card{
+    border: none;
+    margin-bottom: 30px;
+    background: rgb(223, 221, 221);
+}
+.inner{
+    overflow: hidden;
+}
+.inner img{
+    transition: all 1.1s ease;
+}
+.inner:hover img{
+    transform: scale(1.2);
+}
+.card-text{
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/*------------------
+  FOOTER SECTION
+--------------------*/
+
+#footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #4a4f54;
+    color: #e4e8e8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#footer h6{
+    color: #e4e8e8;
+    padding-bottom: 10px;
+}
+#footer li{
+    padding-bottom: 5px;
+}
+#footer i{
+    font-size: 40px;
+    color:#e4e8e8;
+}
+#footer i:hover{
+    color: rgb(110, 110, 247);
+}
+.bottom a{
+    color: rgba(255, 255, 255, 0.815);
+    font-size: 10px;
+}
+.bottom a:hover{
+    text-decoration: underline;
+    font-weight: normal;
+}
+.soc a{
+    color: rgba(255, 255, 255, 0.815);
+    font-size: 10px;
+}
+.soc a:hover{
+    color: rgb(110, 110, 247);
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+
+/*------------------
+  COPYRIGHT SECTION
+--------------------*/
+
+#copy{
+    padding-top: 12px;
+    background: #000000;
+    color: rgb(90, 89, 89);
+}
+
+/*------------------
+  GALLERY SECTION
+--------------------*/
+.gallery{
+    margin: 50px auto;
+}
+.gallery img{
+    width: 225px;
+    height: 120px;
+    padding: 5px;
+    filter: grayscale(100%);
+}
+.gallery img:hover{
+    filter: grayscale(0%);
+    border: 1px solid black;
+}
+
+
+
+/*=====================
+    END HOME PAGE
+======================*/    
+
+
+
+/*=====================
+    OTHER PAGES
+======================*/
+
+/*-----------------
+ AUTOBIOGRAPHY
+------------------*/
+#hero1_autobiography{
+    padding: 0px;
+}
+#hero1_autobiography img{
+    width: 100%;
+}
+.central_models1{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-decoration: underline;
+}
+
+/*-----------------
+ HISTORY
+------------------*/
+#history{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.hisstext{
+    font-size: 14px;
+}
+
+/*-----------------
+ RESPONSIBLE
+------------------*/
+#responsible{
+    padding: 50px 0;
+    background: rgb(68, 65, 65);
+    color: white;
+}
+#responsible h2, #responsible h6{
+    color: white;
+}
+.hisstext{
+    font-size: 14px;
+}
+.responsible_img {
+    padding: 0px;
+}
+.responsible_img img{
+    width: 100%;
+}
+/*-----------------
+ SERVIS
+------------------*/
+#servis{
+    background-color: #ccc;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+/*-----------------
+ SHOP
+------------------*/
+#shop{
+    background-color: #ccc;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+#shop .shop_cards{
+    margin-bottom: 30px;
+}
+.shop_cards a:hover{
+    transition: none;
+    transform: none;
+}
+.card-footer{
+    border-top: none;
+}
+/*-----------------
+ TEST DRIVE
+------------------*/
+#test_drive{
+    background-color: #ccc;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/*-----------------
+ BASKET
+------------------*/
+#basket{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-decoration: underline;
+}
+#basket_section{
+    background-color: #ccc;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+#basket_row img{
+    width: 45px;
+    height: 40px;
+}
+#basket_row .fa-shopping-cart{
+    font-size: 35px;
+}
+#basket_row h6{
+    margin-top: 0px;
+}
+.table_describe{
+    width: 326px;
+}
+.table_name{
+    width: 155px;
+}
+.table_material{
+    width: 168px;
+}
+.table_color{
+    width: 109px;
+}
+.cart-trash{
+    cursor: pointer;
+}
+
+/*
+ CENTRAL HEADING 1-FOR ALL OTHER PAGES
+-----------------------------------------*/
+.central_models1{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-decoration: underline;
+}
+
+/*
+ CENTRAL HEADING 2-FOR ALL OTHER PAGES
+-----------------------------------------*/
+
+.central_models2{
+    background: rgb(223, 221, 221);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-decoration: underline;
+}
+.models_main{
+    background: rgb(223, 221, 221);
+}
+
+
+/*
+ PARALLAX SECTION
+--------------------*/
+#autobiography_parallax{
+    background: url('../pics/autobiographyin.jpg') 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+#sport_parallax{
+    background: url('../pics/sportin.jpg') 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+#velar_parallax{
+    background: url('../pics/velarin.png') 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+#evoque_parallax{
+    background: url('../pics/evoquein.jpg') 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+#discovery_parallax{
+    background: url('../pics/discoveryin.jpg') 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+#defender_parallax{
+    background: url('../pics/defenderin.jpg') 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+#history_parallax{
+    background: url('../pics/history.jpg') 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 400px;
+    padding-bottom: 400px;
+}
+#responsible_parallax{
+    background: url('../pics/hibrid.jpg') 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 400px;
+    padding-bottom: 400px;
+}
+#servis_parallax{
+    background: url('../pics/servis.jpg') 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 400px;
+    padding-bottom: 400px;
+}
+#testDrive_parallax{
+    background: url('../pics/acs.jpg') 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 450px;
+    padding-bottom: 200px;
+}
+#shop_parallax{
+    background: url('../pics/shop.jpg') 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 450px;
+    padding-bottom: 300px;
+}
+
+/*=================================
+   END CAR MODELS PAGES AND OTHER
+===================================*/
+
+
+
+/*========================
+    ADMIN-PLATFORM PAGES
+==========================*/
+
+
+/*
+ INDEX SECTION
+--------------------*/
+#admin{
+    padding: 0px;
+    background: #e4e5e6;
+}
+#admin-logo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold; 
+}
+#admin_login{ 
+    margin: 10px auto;
+}
+#admin_login_form{
+    background: #fff;
+}
+#admin_login_hero{
+    padding: 0;
+}
+#admin-socials{
+    margin: 30px auto;
+    text-align: center;
+}
+#admin-socials i{
+    font-size: 18px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.fa-google:hover{
+    color: tomato;
+}
+.fa-twitter:hover{
+    color: rgb(71, 99, 255);
+}
+.fa-linkedin:hover{
+    color: rgb(71, 99, 255);
+}
+.fa-facebook:hover{
+    color: blue;
+}
+#admin_error{
+    margin: 5px auto;
+}
+
+/*
+ADMIN NAV SECTION
+--------------------*/
+#admin-nav{
+    padding: 0px;
+}
+#admin_head{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+#admin_head .btn{
+    color: #000;
+}
+#admin_head .btn:hover{
+    color: #fff;
+}
+#nav_middle{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+#nav_middle a{
+    color: #fff;
+    opacity: 0.85;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+#nav_middle a:hover{
+    color: #fff;
+    background: #000;
+    text-decoration: none;
+    opacity: 0.8;
+}
+#nav_middle a.active{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+}
+#nav_bottom{
+    background: #e4e5e6;
+}
+#nav_bottom .nav-item{
+    margin-right: 20px;
+}
+#navbarDropdown{
+    color: #000;
+}
+#navbarDropdown:hover{
+    color: blue;
+    text-decoration: none;
+}
+#admin_date{
+    width: 300px;
+    margin-top: -5px;
+    padding: 27px 27px 27px 5px;
+    background: #e4e5e6;
+    border-top: none;
+}
+#startDate{
+    background-color: white;
+    margin-bottom: 16px;
+}
+#endDate{
+    background-color: white;
+    margin-bottom: 16px;
+}
+#date_save:hover{
+    color: white;
+    text-decoration: none;
+}
+.admin_checkbox{
+    margin-top: -5px;
+    padding: 20px 20px 20px 5px;
+    background: #e4e5e6;
+    border-top: none;
+}
+.form-check-label:hover{
+    background: none;
+}
+#admin_table_servis{
+    margin-top: 15px;
+}
+#admin_table_servis thead{
+    background: #e4e5e6;
+}
+#admin_servis_data{
+    margin-top: 15px;
+}
+#admin_servis_data thead{
+    background: #e4e5e6;
+}
+#td_data{
+    background:  #e4e5e6;
+}
+.td_service{
+    cursor: pointer;
+}
+#admin_table_data{
+    margin-top: 15px;
+}
+#admin_table_data thead{
+    background: #e4e5e6;
+}
+#admin_drive_data{
+    margin-top: 15px;
+}
+#admin_drive_data thead{
+    background: #e4e5e6;
+}
+#products_form th{
+    width: 270px;
+    padding-top: 20px;
+}
+#update_form thead{
+    padding: 0px;
+}
+#update_form th{
+    width: 270px;
+    padding-top: 20px;
+}
+#delete-form th{
+    width: 270px;
+    padding-top: 20px;
+}
+#updeting_product_section{
+    display: none;
+}
+#deleting_product_section{
+    display: none;
+}
+
+
+/* Loading */
+#loader{
+    width: 300px;
+    display: none;
+}
+
+/* Back top */
+.go-top {
+  background-color: #222;
+  bottom: 2em;
+  right: 2em;
+  color: #ffffff;
+  font-size: 32px;
+  display: none;
+  position: fixed;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.go-top:hover {
+    background: #f2545f;
+    color: #ffffff;
+}
+
+
+
+/*-------------
+ MEDIA QUERY
+---------------*/
+@media (max-width: 1200px) {
+
+    .shop_text{
+        font-size: 11px;
+    }
+    
+}
+
+@media (max-width: 1110px) {
+
+    .carousel-caption{
+        font-size: 12px;
+    }
+    
+}
+
+@media (max-width: 996px) {
+
+    .central1 h1{
+        font-size: 24px;
+    }
+    .central2 h1{
+        font-size: 24px;
+    }
+    
+}
+
+@media (max-width: 780px) {
+
+.carousel-control-prev,
+.carousel-control-next{
+        width: 25px;
+        height: 25px;
+        border-radius: unset;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .carousel-control-prev,
+    .carousel-control-next{
+            width: 25px;
+            height: 25px;
+            border-radius: unset;
+        }
+    
+    }
+@media (max-width: 563px) {
+
+    .central1 h1{
+        font-size: 20px;
+    }
+    .central2 h1{
+        font-size: 20px;
+    }
+    
+}
