@@ -39,7 +39,6 @@ function napraviSesiju($users_id, $users_name, $users_lastname, $users_status, $
     $_SESSION['users_name']="$users_name $users_lastname";
     $_SESSION['users_status']=$users_status;
     $_SESSION['users_email']=$users_email;
-    $remember=$_POST['remember'];
 	if(isset($_POST['remember']))
 	{
 		setcookie("users_id", $users_id, time()+86400,"/");

@@ -12,44 +12,51 @@ if(isset($_GET['logoff']))
 }
 $db=new Baza();
 $db->connect();
-if(isset($_POST["username"]) and isset($_POST["password"]))
+$output['error']="";
+$output['location']="";
+if(isset($_GET['login']));
 {
-    $username=$_POST["username"];
-    $password=$_POST["password"];
-    if(validanString($username) and validanString($password))
+    if($_POST["username"]!="" AND $_POST["password"]!="")
     {
-        $sql="SELECT * FROM users WHERE users_email='{$username}'";
-        $rez=$db->query($sql);
-        if($db->num_rows($rez)==1)
+        $username=$_POST["username"];
+        $password=$_POST["password"];
+        $remember=$_POST['remember'];
+        if(validanString($username) and validanString($password))
         {
-            $red=$db->fetch_object($rez);
-            if($password==$red->users_password)
+            $sql="SELECT * FROM users WHERE users_email='{$username}'";
+            $rez=$db->query($sql);
+            if($db->num_rows($rez)==1)
             {
-                napraviSesiju($red->users_id, $red->users_name, $red->users_lastname, $red->users_status, $red->users_email);
-                Log::upisiLog("../logs/logovanja.txt", "{$_SESSION['users_name']} se uspešno ulogovao");
-                header("location: ../index.php");
+                $red=$db->fetch_object($rez);
+                if($password==$red->users_password)
+                {
+                    napraviSesiju($red->users_id, $red->users_name, $red->users_lastname, $red->users_status, $red->users_email);
+                    Log::upisiLog("../logs/logovanja.txt", "{$_SESSION['users_name']} se uspešno ulogovao");
+                    $output['location']="index.php";  
+                }
+                else
+                {
+                    $output['error']="Nije ispravna lozinka za korisnika ".$username;
+                    Log::upisiLog("../logs/logovanja.txt", "Pogrešna lozinka {$username} - otkucana lozinka je {$password}, poslato sa IP adrese - ".$_SERVER['REMOTE_ADDR']);
+                }
             }
             else
             {
-                echo "Lozinka";
-                Log::upisiLog("../logs/logovanja.txt", "Pogrešna lozinka {$username} - otkucana lozinka je {$password}, poslato sa IP adrese - ".$_SERVER['REMOTE_ADDR']);
+                $output['error']="Nije ispravna E-mail adresa za korisnika ".$username;
+                Log::upisiLog("../logs/logovanja.txt", "Pogrešno korisničko ime {$username} - poslato sa IP adrese - ".$_SERVER['REMOTE_ADDR']);
             }
         }
         else
         {
-            echo "Email";
-            Log::upisiLog("../logs/logovanja.txt", "Pogrešno korisničko ime {$username} - poslato sa IP adrese - ".$_SERVER['REMOTE_ADDR']);
+            $output['error']="E-mail adresa ili lozinka sadrže nedozvoljene karaktere";
+            Log::upisiLog("../logs/logovanja.txt", "Nedozvoljeni karakteri od strane {$username} - poslato sa IP adrese - ".$_SERVER['REMOTE_ADDR']);
         }
     }
     else
     {
-        echo "Karakter";
-        Log::upisiLog("../logs/logovanja.txt", "Nedozvoljeni karakteri od strane {$username} - poslato sa IP adrese - ".$_SERVER['REMOTE_ADDR']);
+        $output['error']="Svi podaci su obavezni!!";
     }
-    
 }
-else
-{
-    echo "Svi podaci su obavezni!!";
-}
+
+echo JSON_encode($output, 256);
 ?>

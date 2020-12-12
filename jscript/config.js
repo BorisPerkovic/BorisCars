@@ -6,54 +6,35 @@ $(document).ready(function(){
 
     //LOG IN
     $("#logIn").click(function(){
-        var username=$("#username").val();
-        var password=$("#password").val();
-        let remember=$("#remember").attr("checked");
-        if(remember==true)
-        {
-          remember="1";
-        }
-        else
-        {
-          remember="0";
-        } 
-        if(username!="" && password!="")
-        {
+      var username=$("#username").val();
+      var password=$("#password").val();
+      let remember=$("#remember").attr("checked");
+      if(remember==true)remember="1";
+      else remember="0";
+      if(username!="" && password!="")
+      {
           $.ajax({
-            url:"php/logIn.php",
-            method:"POST",
-            data:{username:username, password:password, remember:remember},
-            success:function(data){
-                if(data == "Email")
-                {
-                  $("#loginError").text("Nije ispravna email adresa za korisnika "+username);
-                  return false;
-                }
-                else if(data == "Lozinka")
-                {
-                  $("#loginError").text("Pogresna lozinka za korisnika "+username);
-                  return false;
-                }
-                else if(data == "Karakter")
-                {
-                  $("#loginError").text("Email adresa ili lozinka sadrže nedozvoljene karaktere");
-                  return false;
-                }
-                else
-                {
-                  $("#signinPage").hide();
-                  location.reload();
-                }
-                
-            }
-          });
-        }
-        else
-        {
-          $("#loginError").text("Niste popunili sva polja! Sva polja su obavezna!");
-          return false;
-        }
-      });
+          url:"php/logIn?login.php",
+          method:"POST",
+          data:{username:username, password:password, remember:remember},
+          success:function(response){
+            answer=JSON.parse(response);
+            if(answer.error!="")
+            {
+              $("#loginError").text(answer.error);
+            } 
+            else
+            {
+              window.location.assign(answer.location);
+            }  
+          }
+        });
+      }
+      else
+      {
+        $("#loginError").text("Niste popunili sva polja! Sva polja su obavezna!");
+      }
+  });
       
       //REGISTRY
       $("#registry").click(function(){
