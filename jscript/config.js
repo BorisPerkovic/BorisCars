@@ -56,6 +56,10 @@ $(document).ready(function(){
                 {
                   $("#registryError").text("Lozinka i ponovljena lozinka se ne poklapaju!!");
                 }
+                else if(data == "E-mail")
+                {
+                  $("#registryError").text("Korisnik sa E-mail adresom "+email+" već postoji!!");
+                }
                 else
                 {
                   $("#signupPage").hide();
@@ -163,7 +167,7 @@ $(document).ready(function(){
       let answer=JSON.parse(response);
       $("#shop_row").html("");
       for(i in answer)
-     $("#shop_row").append("<div class='col-lg-3 col-md-4 col-sm-6 col-6 shop_cards'><div class='card-group'><div class='card'><img class='card-img-top img-fluid' src='admin-platform/products_pics/"+answer[i].products_id+".jpg' alt='Responsive image'><div class='card-body'><h5 class='card-title text-danger'>"+answer[i].products_price+" RSD</h5><p class='card-text shop_text'><b>Naziv:</b> "+answer[i].products_name+"</p><p class='card-text shop_text'><p class='card-text shop_text'><b>Opis:</b> "+answer[i].products_describe+"</p></div><div class='card-footer'><button class='btn btn-block cart' id='"+answer[i].products_id+"'>Dodaj u <i class='fas fa-shopping-cart'></i></button></div></div></div>");
+     $("#shop_row").append("<div class='col-lg-3 col-md-4 col-sm-6 col-6 shop_cards'><div class='card-group'><div class='card shadow border-light'><img class='card-img-top img-fluid' src='admin-platform/products_pics/"+answer[i].products_id+".jpg' alt='Responsive image'><div class='card-body'><h5 class='card-title text-danger'>"+answer[i].products_price+" RSD</h5><p class='card-text shop_text'><b>Naziv:</b> "+answer[i].products_name+"</p><p class='card-text shop_text'><p class='card-text shop_text'><b>Opis:</b> "+answer[i].products_describe+"</p></div><div class='card-footer'><button class='btn btn-block cart' id='"+answer[i].products_id+"'>Dodaj u <i class='fas fa-shopping-cart'></i></button></div></div></div>");
     });
 
     //Add to cart button- also use basket function for showing number of products in cart cartProductsNumber();

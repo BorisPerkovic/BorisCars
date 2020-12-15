@@ -15,16 +15,24 @@ if(isset($_POST['name']) and isset($_POST['lastname']) and isset($_POST['email']
     $addres=$_POST['addres'];
     $phone=$_POST['phone'];
     if($name!="" and $lastname!="" and $email!="" and $pass!="" and $passrepeat!="")
-    {   
-       if($pass==$passrepeat)
+    { 
+      $sql="SELECT * FROM users WHERE users_email='{$email}'";
+      $rez=$db->query($sql);
+      if($db->num_rows($rez)!=1)
       {
-        $sql="INSERT INTO users (users_name, users_lastname, users_password, users_repassword, users_email, users_adress, users_phone, users_status) VALUES ('{$name}', '{$lastname}', '{$pass}', '{$passrepeat}','{$email}', '{$addres}','{$phone}', '{$status}') ";
-        $db->query($sql);
-        echo "Uspeh";
-        Log::upisiLog("../logs/korisnici.txt", "$name $lastname $email se uspešno registrovao kao novi korisnik");
-      }
+        if($pass==$passrepeat)
+        {
+          $sql="INSERT INTO users (users_name, users_lastname, users_password, users_repassword, users_email, users_adress, users_phone, users_status) VALUES ('{$name}', '{$lastname}', '{$pass}', '{$passrepeat}','{$email}', '{$addres}','{$phone}', '{$status}') ";
+          $db->query($sql);
+          echo "Uspeh";
+          Log::upisiLog("../logs/korisnici.txt", "$name $lastname $email se uspešno registrovao kao novi korisnik");
+        }
+        else
+            echo"Lozinka";
+      }  
       else
-          echo"Lozinka"; 
+        echo"E-mail";
+        Log::upisiLog("../logs/korisnici.txt", "$name $lastname je pokušao da se registruje sa postojećom E-mail adresom $email"); 
         
     }
     else
