@@ -1,3 +1,7 @@
+15.12.2020 23:00:32-Vidoje Bakrač čiji je ID  7 je uspesno izvrsio kupovinu
+15.12.2020 23:00:28-Vidoje Bakrač čiji je ID  7 je obrisao iz korpe proizvod sa ID 6
+15.12.2020 23:00:04-Vidoje Bakrač čiji je ID  7 je dodao u korpu proizvod sa ID 6
+15.12.2020 22:59:30-Vidoje Bakrač čiji je ID  7 je dodao u korpu proizvod sa ID 9
 09.12.2020 13:28:00-Nemanja Stevanovic čiji je ID  3 je uspesno izvrsio kupovinu
 09.12.2020 13:23:12-Nemanja Stevanovic čiji je ID  3 je obrisao iz korpe proizvod sa ID 1
 09.12.2020 13:23:04-Nemanja Stevanovic čiji je ID  3 je dodao u korpu proizvod sa ID 3

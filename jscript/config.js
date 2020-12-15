@@ -51,22 +51,18 @@ $(document).ready(function(){
             url:"php/registry.php",
             method:"POST",
             data:{name:name, lastname:lastname, email:email, pass:pass, passrepeat:passrepeat, addres:addres, phone:phone},
-            success:function(data){
-                if(data == "Lozinka")
-                {
-                  $("#registryError").text("Lozinka i ponovljena lozinka se ne poklapaju!!");
-                }
-                else if(data == "E-mail")
-                {
-                  $("#registryError").text("Korisnik sa E-mail adresom "+email+" već postoji!!");
-                }
-                else
-                {
-                  $("#signupPage").hide();
+            success:function(response){
+              answer=JSON.parse(response);
+              if(answer.registryerror!="")
+              {
+                $("#registryError").text(answer.registryerror);
+              } 
+              else
+              {
+                $("#signupPage").hide();
                   location.reload();
-                  alert("Uspešno ste se registrovali. Želimo Vam srećnu i uspešnu kupovinu!");
-                }
-                
+                  alert(answer.registrysuccess);
+              }  
             }
           });
         }
