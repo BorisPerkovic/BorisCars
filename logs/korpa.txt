@@ -1,3 +1,4 @@
+21.12.2020 23:03:55-Duško Dugouško čiji je ID  9 je dodao u korpu proizvod sa ID 11
 21.12.2020 22:54:42-Duško Dugouško čiji je ID  9 je dodao u korpu proizvod sa ID 6
 15.12.2020 23:00:32-Vidoje Bakrač čiji je ID  7 je uspesno izvrsio kupovinu
 15.12.2020 23:00:28-Vidoje Bakrač čiji je ID  7 je obrisao iz korpe proizvod sa ID 6
