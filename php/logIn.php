@@ -18,17 +18,19 @@ if(isset($_GET['login']));
 {
     if($_POST["username"]!="" AND $_POST["password"]!="")
     {
+        $salt="UF4Uq2WXAx7b93z7svNZ";
         $username=$_POST["username"];
-        $password=$_POST["password"];
+        $password=$_POST["password"].$salt;
+        $pass_hash=md5($password);
         $remember=$_POST['remember'];
-        if(validanString($username) and validanString($password))
+        if(validanString($username) and validanString($pass_hash))
         {
             $sql="SELECT * FROM users WHERE users_email='{$username}'";
             $rez=$db->query($sql);
             if($db->num_rows($rez)==1)
             {
                 $red=$db->fetch_object($rez);
-                if($password==$red->users_password)
+                if($pass_hash==$red->users_password)
                 {
                     napraviSesiju($red->users_id, $red->users_name, $red->users_lastname, $red->users_status, $red->users_email);
                     Log::upisiLog("../logs/logovanja.txt", "{$_SESSION['users_name']} se uspešno ulogovao");
