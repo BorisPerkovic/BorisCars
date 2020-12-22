@@ -1,3 +1,14 @@
+22.12.2020 00:08:00-Nedozvoljeni karakteri - poslato sa IP adrese - ::1
+22.12.2020 00:07:32-Nedozvoljeni karakteri - poslato sa IP adrese - ::1
+22.12.2020 00:07:08-Nedozvoljeni karakteri od strane ( - poslato sa IP adrese - ::1
+22.12.2020 00:06:51-Pogrešno korisničko ime dasda - poslato sa IP adrese - ::1
+22.12.2020 00:06:47-Nedozvoljeni karakteri od strane >dasda - poslato sa IP adrese - ::1
+22.12.2020 00:06:38-Nedozvoljeni karakteri od strane / - poslato sa IP adrese - ::1
+22.12.2020 00:06:23-Nedozvoljeni karakteri od strane ,ja - poslato sa IP adrese - ::1
+22.12.2020 00:06:16-Nedozvoljeni karakteri od strane < - poslato sa IP adrese - ::1
+22.12.2020 00:06:11-Nedozvoljeni karakteri od strane ; - poslato sa IP adrese - ::1
+22.12.2020 00:02:36-Pogrešno korisničko ime < - poslato sa IP adrese - ::1
+22.12.2020 00:02:25-Pogrešno korisničko ime ;;;scripta - poslato sa IP adrese - ::1
 21.12.2020 23:31:10-Uspešna odjava korisnika Boris Perković
 21.12.2020 23:29:25-Boris Perković se uspešno ulogovao
 21.12.2020 23:26:34-Uspešna odjava korisnika Duško Dugouško

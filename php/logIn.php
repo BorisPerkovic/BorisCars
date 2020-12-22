@@ -25,7 +25,7 @@ if(isset($_GET['login']));
         $remember=$_POST['remember'];
         if(validanString($username) and validanString($pass_hash))
         {
-            $sql="SELECT * FROM users WHERE users_email='{$username}'";
+            $sql="SELECT * FROM users WHERE users_email='{$username}' LIMIT 1";
             $rez=$db->query($sql);
             if($db->num_rows($rez)==1)
             {
@@ -51,7 +51,7 @@ if(isset($_GET['login']));
         else
         {
             $output['error']="E-mail adresa ili lozinka sadrže nedozvoljene karaktere";
-            Log::upisiLog("../logs/logovanja.txt", "Nedozvoljeni karakteri od strane {$username} - poslato sa IP adrese - ".$_SERVER['REMOTE_ADDR']);
+            Log::upisiLog("../logs/logovanja.txt", "Nedozvoljeni karakteri pri logovanju - poslato sa IP adrese - ".$_SERVER['REMOTE_ADDR']);
         }
     }
     else
