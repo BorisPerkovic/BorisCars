@@ -1,8 +1,36 @@
 <?php
+$output['error']="";
+$output['location']="";
+require_once("classLog.php");
 session_start();
+
+//If $_SESSION['time'] is set, then disaloow log in for user for 1 minut
+if(isset($_SESSION['time']))
+{
+    //When 1 minut is passed, unset this sessions
+    if(time()-60>$_SESSION['time'])
+    {
+        unset($_SESSION['time']);
+        unset($_SESSION['mistake']);
+    }
+}
+
+//Show message for users that need to wait 1 minut for login, and stop program for 1 minut
+if(isset($_SESSION['mistake']) and $_SESSION['mistake']==5)
+{
+    $output['error']="Pogrešili ste lozinku ili E-mail više od 5 puta. Potrebno je da sačekate 1 minut!";
+    Log::upisiLog("../logs/zabrane.txt", "Korisnik sa IP adrese - ".$_SERVER['REMOTE_ADDR']." je dobio zabranu na 1 minut");
+
+    if(!isset($_SESSION['time']))
+    {
+       $_SESSION['time']=time(); 
+    }
+    echo JSON_encode($output, 256);
+    exit();  
+}
+
 require_once("function.php");
 require_once("classBase.php");
-require_once("classLog.php");
 if(isset($_GET['logoff']))
 {
     Log::upisiLog("../logs/logovanja.txt", "Uspešna odjava korisnika {$_SESSION['users_name']}");
@@ -12,8 +40,6 @@ if(isset($_GET['logoff']))
 }
 $db=new Baza();
 $db->connect();
-$output['error']="";
-$output['location']="";
 if(isset($_GET['login']));
 {
     if($_POST["username"]!="" AND $_POST["password"]!="")
@@ -23,7 +49,7 @@ if(isset($_GET['login']));
         $password=$_POST["password"].$salt;
         $pass_hash=md5($password);
         $remember=$_POST['remember'];
-        if(validanString($username) and validanString($pass_hash))
+        if(validanString($username) and validanString($password))
         {
             $sql="SELECT * FROM users WHERE users_email='{$username}' LIMIT 1";
             $rez=$db->query($sql);
@@ -40,12 +66,34 @@ if(isset($_GET['login']));
                 {
                     $output['error']="Nije ispravna E-mail adresa ili lozinka za korisnika ".$username;
                     Log::upisiLog("../logs/logovanja.txt", "Pogrešna lozinka {$username} - otkucana lozinka je {$password}, poslato sa IP adrese - ".$_SERVER['REMOTE_ADDR']);
+
+                    if(!isset($_SESSION['mistake']))
+                    {
+                        //Seting $_Session mistake
+                        $_SESSION['mistake']=1; 
+                    }
+                    else
+                    {
+                        //Counter for $_Session mistake
+                        ++$_SESSION['mistake'];
+                    }
                 }
             }
             else
             {
                 $output['error']="Nije ispravna E-mail adresa ili lozinka za korisnika ".$username;
                 Log::upisiLog("../logs/logovanja.txt", "Pogrešno korisničko ime {$username} - poslato sa IP adrese - ".$_SERVER['REMOTE_ADDR']);
+
+                if(!isset($_SESSION['mistake']))
+                {
+                    //Seting $_Session mistake
+                    $_SESSION['mistake']=1; 
+                }
+                else
+                {
+                    //Counter for $_Session mistake
+                    ++$_SESSION['mistake'];
+                }
             }
         }
         else
