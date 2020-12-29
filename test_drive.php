@@ -96,7 +96,7 @@ CENTRAL HEADING TEST DRIVE
                 </select><br><br>
                 <button class="btn" id="testDrive_btn">Zakažite vožnju</button><br><br>
             </div>
-            <div class="col-md-12" id="error">
+            <div class="col-md-12" id="drive_error">
 
             </div>
         </div>

@@ -1,3 +1,11 @@
+29.12.2020 15:03:49-Sofronije Sofronijević sofronije@gmail.com je poslao zahtev za servisiranje modela sa ID 8 za kvar sa ID 7
+29.12.2020 15:03:03-Nedozvoljeni karakteri pri zakazivanju servisa - poslato sa IP adrese - ::1
+29.12.2020 15:02:33-Nedozvoljeni karakteri pri zakazivanju servisa - poslato sa IP adrese - ::1
+29.12.2020 15:01:49-dsadad dsadadad dasdsadsad je poslao zahtev za servisiranje modela sa ID 1 za kvar sa ID 1
+29.12.2020 15:01:25-dsadsad dasdsadsad dasddasd je poslao zahtev za servisiranje modela sa ID 1 za kvar sa ID 1
+29.12.2020 15:01:12-Nedozvoljeni karakteri pri zakazivanju servisa - poslato sa IP adrese - ::1
+29.12.2020 15:00:50-Nedozvoljeni karakteri pri zakazivanju servisa - poslato sa IP adrese - ::1
+29.12.2020 14:59:52-Nedozvoljeni karakteri pri yakayivanju servisa - poslato sa IP adrese - ::1
 09.12.2020 17:31:54-Kića Kićanović kića@gmail.com je poslao zahtev za servisiranje modela sa ID 7 za kvar sa ID 6
 09.12.2020 13:44:43-Boris Perković je odbacio test vožnju modela sa ID 7
 09.12.2020 13:44:31-Boris Perković je prihvatio test vožnju modela sa ID 8

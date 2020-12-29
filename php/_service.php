@@ -26,10 +26,20 @@ if(isset($_GET['funkcija']))
         $glitch=$_POST['service_glitch'];
         $comment=$_POST['service_describe'];
         $date=date("Y-m-d");
-        $sql="INSERT INTO services (services_name, service_lastname, service_email, service_phone, service_describe, service_date, models_id, glitch_id) VALUES ('$name', '$lastname', '$email', '$phone', '$comment', '$date', '$model', '$glitch')";
-        $db->query($sql);
-        echo "Uspešno ste zakazali servis. Naše kolege će Vas pozvati za dalja uputstva!";
-        Log::upisiLog("../logs/servisi.txt", "$name $lastname $email je poslao zahtev za servisiranje modela sa ID $model za kvar sa ID $glitch"); 
+        if(validanString($name) and validanString($lastname) and validanString($email) and validanString($phone) and validanString($comment))
+        {
+            $sql="INSERT INTO services (services_name, service_lastname, service_email, service_phone, service_describe, service_date, models_id, glitch_id) VALUES ('$name', '$lastname', '$email', '$phone', '$comment', '$date', '$model', '$glitch')";
+            $db->query($sql);
+            echo "Uspešno ste zakazali servis. Naše kolege će Vas pozvati za dalja uputstva!";
+            Log::upisiLog("../logs/servisi.txt", "$name $lastname $email je poslao zahtev za servisiranje modela sa ID $model za kvar sa ID $glitch");
+        }
+        else
+        {
+            echo "U jednom od polja za unos postoje nedozvoljeni karakteri";
+            Log::upisiLog("../logs/servisi.txt", "Nedozvoljeni karakteri pri zakazivanju servisa - poslato sa IP adrese - ".$_SERVER['REMOTE_ADDR']);
+        }
+        
+         
     }
     
 }

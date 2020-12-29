@@ -25,10 +25,19 @@ if(isset($_GET['funkcija']))
         $model=$_POST['testDrive_model'];
         $date=date("Y-m-d");
         $testDrive_admin="";
-        $sql="INSERT INTO test_drive (testDrive_name, testDrive_lastname, testDrive_email, testDrive_phone, models_id, testDrive_date, testDrive_admin) VALUES ('{$name}', '{$lastname}', '{$email}', '{$phone}', '{$model}','{$date}','{$testDrive_admin}')";
-        $db->query($sql);
-        echo "Uspesno zakazana vožnja!!";
-        Log::upisiLog("../logs/test_vožnje.txt", "$name $lastname $email je poslao zahtev za test vožnju modela sa ID $model");  
+        if(validanString($name) and validanString($lastname) and validanString($email) and validanString($phone))
+        {
+            $sql="INSERT INTO test_drive (testDrive_name, testDrive_lastname, testDrive_email, testDrive_phone, models_id, testDrive_date, testDrive_admin) VALUES ('{$name}', '{$lastname}', '{$email}', '{$phone}', '{$model}','{$date}','{$testDrive_admin}')";
+            $db->query($sql);
+            echo "Uspešno ste zakazali test vožnju. Naše kolege će Vas pozvati za dalja uputstva!";
+            Log::upisiLog("../logs/test_vožnje.txt", "$name $lastname $email je poslao zahtev za test vožnju modela sa ID $model"); 
+        }
+        else
+        {
+            echo "U jednom od polja za unos postoje nedozvoljeni karakteri";
+            Log::upisiLog("../logs/test_vožnje.txt", "Nedozvoljeni karakteri pri zakazivanju test vožnje - poslato sa IP adrese - ".$_SERVER['REMOTE_ADDR']);
+        }
+         
     }
     
 }

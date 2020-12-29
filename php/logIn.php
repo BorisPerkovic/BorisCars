@@ -38,13 +38,13 @@ if(isset($_GET['login']));
                 }
                 else
                 {
-                    $output['error']="Nije ispravna lozinka za korisnika ".$username;
+                    $output['error']="Nije ispravna E-mail adresa ili lozinka za korisnika ".$username;
                     Log::upisiLog("../logs/logovanja.txt", "Pogrešna lozinka {$username} - otkucana lozinka je {$password}, poslato sa IP adrese - ".$_SERVER['REMOTE_ADDR']);
                 }
             }
             else
             {
-                $output['error']="Nije ispravna E-mail adresa za korisnika ".$username;
+                $output['error']="Nije ispravna E-mail adresa ili lozinka za korisnika ".$username;
                 Log::upisiLog("../logs/logovanja.txt", "Pogrešno korisničko ime {$username} - poslato sa IP adrese - ".$_SERVER['REMOTE_ADDR']);
             }
         }

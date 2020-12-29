@@ -142,15 +142,15 @@ $(document).ready(function(){
               url:"php/_test_drive.php?funkcija=zakazivanje_testDrive",
               method:"POST",
               data:{testDrive_name:testDrive_name, testDrive_lastname:testDrive_lastname, testDrive_email:testDrive_email, testDrive_phone:testDrive_phone, testDrive_model:testDrive_model},
-              success:function(data){
+              success:function(response){
                   $("input").val("");
-                  $("#error").text("Uspešno ste zakazali test vožnju. Naše kolege će Vas pozvati za dalja uputstva!");
+                  $("#drive_error").text(response);
               }
             });
         }
         else
         {
-          $("#error").text("Niste popunili sva polja. Sva polja su obavezna!");
+          $("#drive_error").text("Niste popunili sva polja. Sva polja su obavezna!");
         }
       });
 
