@@ -168,7 +168,7 @@ $db->connect();
         <div class="col-lg-4 col-md-4 col-sm-6 col-6" style="margin-bottom: 40px">
             <div class="card shadow border-light h-100">
                 <div class="inner">
-                    <a href="autobiography.php"><img src="pics/autobiography.jpg" class="card-img-top img-fluid" alt="Responsive image"></a>
+                    <a href="Autobiography"><img src="pics/autobiography.jpg" class="card-img-top img-fluid" alt="Responsive image"></a>
                 </div>
                 <div class="card-body">
                     <h6 class="card-title">Autobiography</h6>
@@ -184,7 +184,7 @@ $db->connect();
         <div class="col-lg-4 col-md-4 col-sm-6 col-6" style="margin-bottom: 40px">
             <div class="card shadow border-light h-100">
                 <div class="inner">
-                    <a href="sport.php"><img src="pics/sport.jpg" class="card-img-top img-fluid " alt="Responsive image"></a>
+                    <a href="Sport"><img src="pics/sport.jpg" class="card-img-top img-fluid " alt="Responsive image"></a>
                 </div>
                 <div class="card-body">
                     <h6 class="card-title">Sport</h6>
@@ -200,7 +200,7 @@ $db->connect();
         <div class="col-lg-4 col-md-4 col-sm-6 col-6" style="margin-bottom: 40px">
             <div class="card shadow border-light h-100">
                 <div class="inner">
-                    <a href="velar.php"><img src="pics/velar.jpg" class="card-img-top img-fluid" alt="Responsive image"></a>
+                    <a href="Velar"><img src="pics/velar.jpg" class="card-img-top img-fluid" alt="Responsive image"></a>
                 </div>
                 <div class="card-body">
                     <h6 class="card-title">Velar</h6>
@@ -216,7 +216,7 @@ $db->connect();
         <div class="col-lg-4 col-md-4 col-sm-6 col-6" style="margin-bottom: 40px">
             <div class="card shadow border-light h-100">
                 <div class="inner">
-                    <a href="evoque.php"><img src="pics/evoque.jpg" class="card-img-top img-fluid" alt="Responsive image"></a>
+                    <a href="Evoque"><img src="pics/evoque.jpg" class="card-img-top img-fluid" alt="Responsive image"></a>
                 </div>
                 <div class="card-body">
                     <h6 class="card-title">Evoque</h6>
@@ -232,7 +232,7 @@ $db->connect();
         <div class="col-lg-4  col-md-4 col-sm-6 col-6" style="margin-bottom: 40px">
             <div class="card shadow border-light h-100">
                 <div class="inner">
-                    <a href="discovery.php"><img src="pics/discovery.jpg" class="card-img-top img-fluid" alt="Responsive image"></a>
+                    <a href="Discovery"><img src="pics/discovery.jpg" class="card-img-top img-fluid" alt="Responsive image"></a>
                 </div>
                 <div class="card-body">
                     <h6 class="card-title">Discovery</h6>
@@ -248,7 +248,7 @@ $db->connect();
         <div class="col-lg-4 col-md-4 col-sm-6 col-6" style="margin-bottom: 40px">
             <div class="card shadow border-light h-100">
                 <div class="inner">
-                    <a href="defender.php"><img src="pics/defenderper4.jpg" class="card-img-top img-fluid" alt="Responsive image"></a>
+                    <a href="Defender"><img src="pics/defenderper4.jpg" class="card-img-top img-fluid" alt="Responsive image"></a>
                 </div>
                 <div class="card-body">
                     <h6 class="card-title text-left">Defender</h6>

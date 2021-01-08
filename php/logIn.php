@@ -35,7 +35,7 @@ if(isset($_GET['logoff']))
 {
     Log::upisiLog("../logs/logovanja.txt", "Uspešna odjava korisnika {$_SESSION['users_name']}");
     unistiSesiju();
-    header("location: ../index.php");
+    header("location: ../Početna");
     
 }
 $db=new Baza();
@@ -60,7 +60,7 @@ if(isset($_GET['login']));
                 {
                     napraviSesiju($red->users_id, $red->users_name, $red->users_lastname, $red->users_status, $red->users_email);
                     Log::upisiLog("../logs/logovanja.txt", "{$_SESSION['users_name']} se uspešno ulogovao");
-                    $output['location']="index.php";  
+                    $output['location']="Početna";  
                 }
                 else
                 {

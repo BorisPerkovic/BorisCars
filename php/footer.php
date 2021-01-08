@@ -11,30 +11,30 @@
         <div class="col-md-3 mx-auto mb-4 bottom">
             <h6>naša vozila</h6>
             <ul class="list-unstyled">
-                <li class="my-2"><a href="autobiography.php">Range Rover autobiograbhy</a></li>
-                <li class="my-2"><a href="sport.php">range rover sport</a></li>
-                <li class="my-2"><a href="velar.php">range rover velar</a></li>
-                <li class="my-2"><a href="evoque.php">range rover evoque</a></li>
-                <li class="my-2"><a href="discovery.php">range rover discovery</a></li>
-                <li class="my-2"><a href="defender.php">range rover defender</a></li>
+                <li class="my-2"><a href="Autobiography">Range Rover autobiograbhy</a></li>
+                <li class="my-2"><a href="Sport">range rover sport</a></li>
+                <li class="my-2"><a href="Velar">range rover velar</a></li>
+                <li class="my-2"><a href="Evoque">range rover evoque</a></li>
+                <li class="my-2"><a href="Discovery">range rover discovery</a></li>
+                <li class="my-2"><a href="Defender">range rover defender</a></li>
             </ul>
         </div>
 
         <div class="col-md-3 mx-auto mb-4 bottom">
             <h6>istraživati</h6>
             <ul class="list-unstyled">
-                <li class="my-2"><a href="history.php">istorija land rover-a</a></li>
-                <li class="my-2"><a href="terms.php">uslovi korišćenja</a></li>
-                <li class="my-2"><a href="shop.php">pronađite aksesoare</a></li>
-                <li class="my-2"><a href="responsible.php">odgovorno poslovanje</a></li>
+                <li class="my-2"><a href="Istorija">istorija land rover-a</a></li>
+                <li class="my-2"><a href="Uslovi-korišćenja">uslovi korišćenja</a></li>
+                <li class="my-2"><a href="Shop">pronađite aksesoare</a></li>
+                <li class="my-2"><a href="Odgovorno-poslovanje">odgovorno poslovanje</a></li>
             </ul>
         </div>
 
         <div class="col-md-3 mx-auto mb-4 bottom">
             <h6>servis</h6>
             <ul class="list-unstyled">
-                <li class="my-2"><a href="servis.php">zakažite servis</a></li>
-                <li class="my-2"><a href="test_drive.php">zakažite probnu vožnju</a></li>
+                <li class="my-2"><a href="Servis">zakažite servis</a></li>
+                <li class="my-2"><a href="Test-vožnja">zakažite probnu vožnju</a></li>
             </ul>
         </div>
         

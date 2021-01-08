@@ -1,0 +1,45 @@
+#Zabrana prikazivanja sadržaja foldera u koliko ne postoje index.php ili index.html fajlovi
+Options -Indexes
+
+#ErrorDocument varijante prikazivanja sopstvenih stranica za greške
+ErrorDocument 404 "Zeljena stranica ne postoji. Molimo Vas, vratite se nazad. / Requested page does not exict. Please, return back."
+ErrorDocument 403 "Nemate dozvolu da pristupite fajlovima na ovaj nacin. Molimo Vas, vratite se nazad. / You do not have permission to access this file. Please, return back."
+ErrorDocument 401 "Vasi podaci su neispravni. Unesite ispravne podatke"
+
+#NAPOMENA:
+# U slučaju da sadržaj .htaccess fajla ima grešku (npr. u kucanju), pojaviće se Apache Error 500, koji ne može da se predefiniše #direktivom #ErrorDocument iz .htacccess fajla
+#već samo u glavnom konfiguracionom fajlu httpd.conf
+
+#Rewrite fajlova 
+RewriteEngine On
+
+RewriteRule     Početna                              index.php
+
+RewriteRule     Autobiography                        autobiography.php
+
+RewriteRule     Sport                                sport.php
+
+RewriteRule     Velar                                velar.php
+
+RewriteRule     Evoque                               evoque.php
+
+RewriteRule     Discovery                            discovery.php
+
+RewriteRule     Defender                             defender.php
+
+RewriteRule     Galerija                             defender.php
+
+RewriteRule     Istorija                             history.php
+
+RewriteRule     Servis                               servis.php
+
+RewriteRule     Test-vožnja                          test_drive.php
+
+RewriteRule     Shop                                 shop.php
+
+RewriteRule     Uslovi-korišćenja                    terms.php
+
+RewriteRule     Odgovorno-poslovanje                 responsible.php
+
+RewriteRule     Korpa                                basket.php
+

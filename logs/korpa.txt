@@ -1,3 +1,8 @@
+08.01.2021 14:24:48-Pera Perić čiji je ID  5 je uspesno izvrsio kupovinu
+08.01.2021 14:24:19-Pera Perić čiji je ID  5 je obrisao iz korpe proizvod sa ID 9
+08.01.2021 14:22:14-Pera Perić čiji je ID  5 je dodao u korpu proizvod sa ID 12
+08.01.2021 14:22:09-Pera Perić čiji je ID  5 je dodao u korpu proizvod sa ID 9
+08.01.2021 14:22:04-Pera Perić čiji je ID  5 je dodao u korpu proizvod sa ID 2
 21.12.2020 23:03:55-Duško Dugouško čiji je ID  9 je dodao u korpu proizvod sa ID 11
 21.12.2020 22:54:42-Duško Dugouško čiji je ID  9 je dodao u korpu proizvod sa ID 6
 15.12.2020 23:00:32-Vidoje Bakrač čiji je ID  7 je uspesno izvrsio kupovinu

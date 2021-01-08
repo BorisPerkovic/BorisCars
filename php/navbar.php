@@ -4,7 +4,7 @@
 <nav class="navbar fixed-top navbar-light  navbar-expand-lg" id="navbar">
 
   <!-- Company logo-->
-  <a class="navbar-brand" href="#"><img src="pics/logo.png" class="img-fluid" alt="Responsive image"></a>
+  <a class="navbar-brand" href="Početna"><img src="pics/logo.png" class="img-fluid" alt="Responsive image"></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -14,7 +14,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto" id="mr-auto">
       <li class="nav-item">
-        <a class="nav-link navbara" href="index.php">Početna <span class="sr-only">(current)</span></a>
+        <a class="nav-link navbara" href="Početna">Početna <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown">
         <a id="dropdown_models" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -23,76 +23,53 @@
 
         <!--Dropdown with models-->
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="navdropdown">
-          <a class="dropdown-item" href="autobiography.php"><img src="pics/autobiography.jpg" class="navimg"  alt="Range"> Range Rover Autobiography</a>
+          <a class="dropdown-item" href="Autobiography"><img src="pics/autobiography.jpg" class="navimg"  alt="Range"> Range Rover Autobiography</a>
           <hr class="navdropdown">
-          <a class="dropdown-item" href="sport.php"><img class="navimg" src="pics/sport.jpg" alt="Range"> Range Rover Sport</a>
+          <a class="dropdown-item" href="Sport"><img class="navimg" src="pics/sport.jpg" alt="Range"> Range Rover Sport</a>
           <hr class="navdropdown">
-          <a class="dropdown-item" href="velar.php"><img class="navimg" src="pics/velar.jpg" alt="Range"> Range Rover Velar</a>
+          <a class="dropdown-item" href="Velar"><img class="navimg" src="pics/velar.jpg" alt="Range"> Range Rover Velar</a>
           <hr class="navdropdown">
-          <a class="dropdown-item" href="evoque.php"><img class="navimg" src="pics/evoque.jpg" alt="Range"> Range Rover Evoque</a>
+          <a class="dropdown-item" href="Evoque"><img class="navimg" src="pics/evoque.jpg" alt="Range"> Range Rover Evoque</a>
           <hr class="navdropdown">
-          <a class="dropdown-item" href="discovery.php"><img class="navimg" src="pics/discovery.jpg" alt="Range"> Range Rover Discovery</a>
+          <a class="dropdown-item" href="Discovery"><img class="navimg" src="pics/discovery.jpg" alt="Range"> Range Rover Discovery</a>
           <hr class="navdropdown">
-          <a class="dropdown-item" href="defender.php"><img class="navimg" src="pics/defender.jpg" alt="Range"> Range Rover Defender</a>
+          <a class="dropdown-item" href="Defender"><img class="navimg" src="pics/defender.jpg" alt="Range"> Range Rover Defender</a>
         </div>
         
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="gallery.php">Galerija</a>
+        <a class="nav-link" href="Galerija">Galerija</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="history.php">Istorija</a>
+        <a class="nav-link" href="Istorija">Istorija</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="servis.php">Servis</a>
+        <a class="nav-link" href="Servis">Servis</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="test_drive.php">Test vožnja</a>
+        <a class="nav-link" href="Test-vožnja">Test vožnja</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="shop.php">Shop</a>
+        <a class="nav-link" href="Shop">Shop</a>
       </li>
     </ul>
 
     <!--Right part-buttons for login and regyster-->
     <form class="form-inline my-2 my-lg-0">
         <?php
-                //IF user is login buttons for login and registry are hide and show users name lastname status
+                //IF user is login buttons for login and registry are hide and show users name lastname
             if (login())
             {
-                if($_SESSION['users_status']=="Administrator" )
-                {
             ?>      
-                    <div class="btn-group profil">
-                        <button type="button" class="btn profil-text dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <?php echo "{$_SESSION['users_name']} ({$_SESSION['users_status']})"; ?> <i class='fas fa-shopping-cart'></i> <span class="cart_product_number"></span> 
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right profil-link">
-                            <button class="dropdown-item" type="button"><a href="basket.php">Korpa (<span class="cart_product_number"></span>)  </a></button>
-                            <button class="dropdown-item" type="button"><a href="comments.php">Komentari</a></button>
-                            <button class="dropdown-item" type="button"><a href="logs.php">Logovi</a></button>
-                            <button class="dropdown-item" type="button"><a href="php/logIn.php?logoff">Odjavite se</a></button>
-                        </div>
+                <div class="btn-group profil">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 10px;">
+                        <?php echo "{$_SESSION['users_name']}" ?> <i class='fas fa-shopping-cart'></i> <span class="cart_product_number"></span>  
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right profil-link">
+                        <button class="dropdown-item" type="button"><a href="Korpa">Korpa (<span class="cart_product_number"></span>) </a></button>
+                        <button class="dropdown-item" type="button"><a href="php/logIn.php?logoff">Odjavite se</a></button>
                     </div>
-
-                <?php
-                    // IF users login have no status show users name lastname
-                }
-                else
-                {
-                ?>
-                    <div class="btn-group profil">
-                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 10px;">
-                            <?php echo "{$_SESSION['users_name']}" ?> <i class='fas fa-shopping-cart'></i> <span class="cart_product_number"></span>  
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right profil-link">
-                            <button class="dropdown-item" type="button"><a href="basket.php">Korpa (<span class="cart_product_number"></span>) </a></button>
-                            <button class="dropdown-item" type="button"><a href="php/logIn.php?logoff">Odjavite se</a></button>
-                        </div>
-                    </div>
-                <?php
-                }
-                ?>
+                </div>
             <?php
             }
             else

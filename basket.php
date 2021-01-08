@@ -35,7 +35,7 @@ $db->connect();
     <link rel="stylesheet" href="css/style.css">
     <link href="css/icons/all.min.css" rel="stylesheet">
 
-    <title>AKSESOARI</title>
+    <title>KORPA</title>
 </head>
 <body>
 
