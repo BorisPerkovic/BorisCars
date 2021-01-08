@@ -50,7 +50,7 @@ $db->connect();
 
         <!--LOGO-->
         <div class="col-lg-8" id="admin-logo">
-            <img src="../admin-platform/products_pics/admin-logo.png" class="img-fluid" alt="Responsive image">Land Rover International   
+            <img src="../admin-platform/products_pics/admin-logo.jpg" class="img-fluid" alt="Responsive image">BorisCars International   
         </div>
 
         <div class="col-lg-8" id="admin_login">
@@ -78,10 +78,6 @@ $db->connect();
                             </div>
                             <input type="password" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="admin_password" id="admin_password" placeholder="Unesite lozinku...">
                         </div>
-                        <div class="form-group form-check">
-                            <input type="checkbox" name="remember" id="remember" class="form-check-input">
-                            <label class="form-check-label d-flex">Zapamti me</label>
-                        </div><br>
                     </div>
                     <div class="modal-footer d-flex justify-content-center">
                         <a href="#" class="btn btn-block log" id="admin_login_btn">Ulogujte se</a>

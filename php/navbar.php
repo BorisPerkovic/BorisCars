@@ -4,7 +4,7 @@
 <nav class="navbar fixed-top navbar-light  navbar-expand-lg" id="navbar">
 
   <!-- Company logo-->
-  <a class="navbar-brand" href="Početna"><img src="pics/logo.png" class="img-fluid" alt="Responsive image"></a>
+  <a class="navbar-brand" href="Početna"><img src="pics/logo1.jpg" class="img-fluid" alt="Responsive image"></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

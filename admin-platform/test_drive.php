@@ -56,7 +56,7 @@ if($_SESSION['admin_status']!="Administrator" AND $_SESSION['admin_status']!="Vo
 <nav class="navbar navbar-light bg-primary justify-content-between" id="admin_head">
 
   <!--Company logo-->
-  <a class="navbar-brand"><img src="products_pics/admin-logo-nav.png" class="img-fluid" alt="Responsive image"></a>
+  <a class="navbar-brand"><img src="products_pics/admin-logo-nav.jpg" class="img-fluid" alt="Responsive image"></a>
 
 
     <!--Button for logOut and showing users name lastname and status-->
