@@ -21,6 +21,7 @@ if($_SESSION['admin_status']!="Administrator" AND $_SESSION['admin_status']!="Se
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="icon" href="../pics/logo1.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Latest compiled and minified CSS -->
