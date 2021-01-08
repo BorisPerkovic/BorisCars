@@ -100,16 +100,23 @@ $(document).ready(function(){
         var service_describe=$("#service_describe").val();
         if(service_name!="" && service_lastname!="" && service_email!="" && service_phone!="" && service_model!="" && service_glitch!="" && service_describe!="")
         {
-            $.ajax({
-              url:"php/_service.php?funkcija=zakazivanje_servis",
-              method:"POST",
-              data:{service_name:service_name, service_lastname:service_lastname, service_email:service_email, service_phone:service_phone, service_model:service_model, service_glitch:service_glitch, service_describe},
-              success:function(response){
-                  $("input").val("");
-                  $("#service_describe").val("");
-                  $("#error").text(response);
-              }
-            });
+            if(service_describe.length<150)
+            {
+                $.ajax({
+                url:"php/_service.php?funkcija=zakazivanje_servis",
+                method:"POST",
+                data:{service_name:service_name, service_lastname:service_lastname, service_email:service_email, service_phone:service_phone, service_model:service_model, service_glitch:service_glitch, service_describe},
+                success:function(response){
+                    $("input").val("");
+                    $("#service_describe").val("");
+                    $("#error").text(response);
+                }
+              });
+            }
+            else
+            {
+              $("#error").text("U polju za opis kvara ste uneli više od 150 karaktera!");
+            }
         }
         else
         {
