@@ -58,9 +58,17 @@ if(isset($_GET['login']));
                 $red=$db->fetch_object($rez);
                 if($pass_hash==$red->users_password)
                 {
-                    napraviSesiju($red->users_id, $red->users_name, $red->users_lastname, $red->users_status, $red->users_email);
-                    Log::upisiLog("../logs/logovanja.txt", "{$_SESSION['users_name']} se uspešno ulogovao");
-                    $output['location']="Početna";  
+                    if($red->users_valid=="1")
+                    {
+                        napraviSesiju($red->users_id, $red->users_name, $red->users_lastname, $red->users_status, $red->users_email);
+                        Log::upisiLog("../logs/logovanja.txt", "{$_SESSION['users_name']} se uspešno ulogovao");
+                        $output['location']="Početna"; 
+                    }
+                    else
+                    {
+                        $output['error']="Nalog postoji, međutim nije aktiviran. Aktivirajte nalog putem aktivacionog linka koji je poslat na Vašu E-mail adresu prilikom registracije.";
+                    }
+                      
                 }
                 else
                 {

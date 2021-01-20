@@ -53,16 +53,8 @@ $(document).ready(function(){
             data:{name:name, lastname:lastname, email:email, pass:pass, passrepeat:passrepeat, addres:addres, phone:phone},
             success:function(response){
               answer=JSON.parse(response);
-              if(answer.registryerror!="")
-              {
-                $("#registryError").text(answer.registryerror);
-              } 
-              else
-              {
-                $("#signupPage").hide();
-                  location.reload();
-                  alert(answer.registrysuccess);
-              }  
+              $("input").val("");
+                $("#registryError").text(answer.registryerror);  
             }
           });
         }
