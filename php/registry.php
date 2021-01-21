@@ -29,7 +29,7 @@ if(isset($_POST['name']) and isset($_POST['lastname']) and isset($_POST['email']
         {
           if($pass_hash==$passrepeat_hash)
           {
-            $valid_number="1245789";
+            $valid_number=validNumber();
             $sql="INSERT INTO users (users_name, users_lastname, users_password, users_repassword, users_email, users_adress, users_phone, users_status, users_valid) VALUES ('{$name}', '{$lastname}', '{$pass_hash}', '{$passrepeat_hash}','{$email}', '{$addres}','{$phone}', '{$status}', '{$valid_number}')";
             $db->query($sql);
             $output['registryerror']="Uspešno ste kreirali nalog. Kompletirajte registraciju klikom na aktivacioni link koji je poslat na Vašu E-mail adresu";
@@ -42,6 +42,7 @@ if(isset($_POST['name']) and isset($_POST['lastname']) and isset($_POST['email']
             $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
             $message = "<p>Kliknite na link ispod da kompletirate registraciju<br><strong><a href='https://boriscars.000webhostapp.com/BorisCars/php/active_registry.php?users_email=$email&valid_number=$valid_number'>Link za aktivaciju</a></strong></p>";
             mail($to, $subject, $message, $headers);
+
 
             Log::upisiLog("../logs/korisnici.txt", "$name $lastname $email je uspešno kreirao nalog kao novi korisnik");
           }

@@ -53,4 +53,16 @@ function napraviSesiju($users_id, $users_name, $users_lastname, $users_status, $
         setcookie("users_email", $users_email, time()+86400,"/");
 	}
 }
+function validNumber()
+{
+    $a=["a", "b","c","v","g","j","e","z","y"];
+    $b=["A", "B","C","V","G","J","E","Z","Y"];
+    $c=["A", "B","C","V","G","J","E","Z","Y"];
+    $d=[1,2,3,4,5,6,7,8,9];
+    $e=["a", "b","c","v","g","j","e","z","y"];
+    $h=[1,2,3,4,5,6,7,8,9];
+    $g=["a", "b","c","v","g","j","e","z","y"];
+    $valid_number=$a[round(mt_rand(0,count($a)-1))].$b[round(mt_rand(0,count($b)-1))].$c[round(mt_rand(0,count($c)-1))].$d[round(mt_rand(0,count($d)-1))].$e[round(mt_rand(0,count($e)-1))].$g[round(mt_rand(0,count($g)-1))].$h[round(mt_rand(0,count($h)-1))];
+    return $valid_number;
+}
 ?>
