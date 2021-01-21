@@ -395,7 +395,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `users_adress` varchar(50) NOT NULL,
   `users_phone` varchar(13) NOT NULL,
   `users_status` varchar(20) NOT NULL,
-  `users_valid` int(20) NOT NULL,
+  `users_valid` char(7) NOT NULL,
   PRIMARY KEY (`users_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
