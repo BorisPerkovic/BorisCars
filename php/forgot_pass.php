@@ -33,7 +33,7 @@ if(isset($_POST['forgot_email']));
                     $headers = "From: BorisPerkovic <info@borisperkovic.rs"."\r\n";
                     $headers .= "MIME-Version: 1.0\r\n";
                     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-                    $message = "<p>Uspešno ste izmenili lozinku.<br><br>Vaši podaci za prijavu su:<br><br>E-mail adresa: ".$email."<br><br>Nova lozinka: ".$$valid_password."</p>";
+                    $message = "<p>Uspešno ste izmenili lozinku.<br><br>Vaši podaci za prijavu su:<br><br>E-mail adresa: ".$email."<br><br>Nova lozinka: ".$valid_password."</p>";
                     mail($to, $subject, $message, $headers);
                    Log::upisiLog("../logs/zamena_lozinke.txt", "$email je uspešno promenio lozinku"); 
                 }

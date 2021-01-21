@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Dec 11, 2020 at 05:02 PM
--- Server version: 5.7.29-log
+-- Generation Time: Jan 21, 2021 at 04:07 PM
+-- Server version: 5.7.26
 -- PHP Version: 7.2.18
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -21,8 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `rangerover`
 --
-CREATE DATABASE IF NOT EXISTS `rangerover` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `rangerover`;
 
 -- --------------------------------------------------------
 
@@ -70,7 +68,7 @@ CREATE TABLE IF NOT EXISTS `basket` (
   `accepted` tinyint(1) DEFAULT '1',
   `shop_time` datetime DEFAULT CURRENT_TIMESTAMP,
   UNIQUE KEY `basket_id` (`basket_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `basket`
@@ -122,7 +120,10 @@ INSERT INTO `basket` (`basket_id`, `users_id`, `products_id`, `accepted`, `shop_
 (43, 3, 4, 0, '2020-12-09 14:20:49'),
 (44, 3, 2, 2, '2020-12-09 14:20:52'),
 (45, 3, 1, 0, '2020-12-09 14:23:02'),
-(46, 3, 3, 2, '2020-12-09 14:23:04');
+(46, 3, 3, 2, '2020-12-09 14:23:04'),
+(47, 5, 2, 2, '2021-01-08 15:22:04'),
+(48, 5, 9, 0, '2021-01-08 15:22:09'),
+(49, 5, 12, 2, '2021-01-08 15:22:14');
 
 -- --------------------------------------------------------
 
@@ -265,7 +266,7 @@ CREATE TABLE IF NOT EXISTS `services` (
   `glitch_id` int(11) NOT NULL,
   `service_admin` varchar(50) NOT NULL DEFAULT '',
   PRIMARY KEY (`service_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `services`
@@ -292,7 +293,8 @@ INSERT INTO `services` (`service_id`, `services_name`, `service_lastname`, `serv
 (19, 'Dragan', 'Stojkovic', 'gagi@gmail.com', '564654546546', 'Pocela da se hvata korozija na prednjem delu branika', '2020-12-07', 'Servisiran', '2020-12-07 21:54:47', 12, 6, 'Boris Perković'),
 (21, 'Mića', 'Mićković', 'mmića@gmail.com', '5456465465', 'Neče da se spuštaju prozori', '2020-12-09', 'Odbijen', '2020-12-09 13:40:50', 12, 3, 'Boris Perković'),
 (22, 'Boban', 'Rajović', 'bobe@gmail.com', '1321345646', 'Ne prebacuje brzine kako treba', '2020-12-09', 'Servisiran', '2020-12-09 13:40:22', 6, 1, 'Boris Perković'),
-(23, 'Kića', 'Kićanović', 'kića@gmail.com', '13213213', 'Počelo da guli desno krilo', '2020-12-09', 'Na čekanju', NULL, 7, 6, '');
+(23, 'Kića', 'Kićanović', 'kića@gmail.com', '13213213', 'Počelo da guli desno krilo', '2020-12-09', 'Na čekanju', NULL, 7, 6, ''),
+(24, 'Konan', 'Varvarin', 'konan@gmail.com', '43231231', 'Kada pritiskam kočnicu dešava se to da papučica kočnice samo propadne a nema efekta na točkove', '2021-01-08', 'Na čekanju', NULL, 9, 7, '');
 
 -- --------------------------------------------------------
 
@@ -358,7 +360,7 @@ CREATE TABLE IF NOT EXISTS `test_drive` (
   `models_id` int(11) NOT NULL,
   `testDrive_admin` varchar(50) NOT NULL DEFAULT '',
   PRIMARY KEY (`testDrive_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `test_drive`
@@ -373,7 +375,8 @@ INSERT INTO `test_drive` (`testDrive_id`, `testDrive_name`, `testDrive_lastname`
 (6, 'Bobi', 'Marjanovic', 'bobi@gmail.com', '212312313', '2020-12-07', 'Odbijeno', '2020-12-09 00:20:55', 11, 'Boris Perković'),
 (7, 'MIlan', 'Kalinic', 'milan@gmail.com', '465465465', '2020-12-09', 'Odbijeno', '2020-12-09 14:44:43', 6, 'Boris Perković'),
 (8, 'Ognjen', 'Amidzic', 'ogi@gmail.com', '465465465', '2020-12-09', 'Voženo', '2020-12-09 14:44:31', 3, 'Boris Perković'),
-(9, 'Dača', 'Dačićović', 'dača@gmail.com', '465465465', '2020-12-09', 'Na čekanju', NULL, 1, '');
+(9, 'Dača', 'Dačićović', 'dača@gmail.com', '465465465', '2020-12-09', 'Na čekanju', NULL, 1, ''),
+(10, 'Konan', 'Varvarin', 'konan@gmail.com', '3231123213', '2021-01-08', 'Na čekanju', NULL, 7, '');
 
 -- --------------------------------------------------------
 
@@ -392,18 +395,17 @@ CREATE TABLE IF NOT EXISTS `users` (
   `users_adress` varchar(50) NOT NULL,
   `users_phone` varchar(13) NOT NULL,
   `users_status` varchar(20) NOT NULL,
+  `users_valid` int(20) NOT NULL,
   PRIMARY KEY (`users_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`users_id`, `users_name`, `users_lastname`, `users_email`, `users_password`, `users_repassword`, `users_adress`, `users_phone`, `users_status`) VALUES
-(1, 'Mika', 'Mikić', 'mmika@gmail.com', 'mmika', 'mmika', 'mmikina 7', '1234678', ''),
-(2, 'Pera', 'Perić', 'ppera@gmail.com', 'ppera', 'ppera', 'pperina 8', '132132456', ''),
-(3, 'Nemanja', 'Stevanovic', 'nnemke@gmail.com', 'nemke', 'nemke', 'nemketova 10', '456789875', ''),
-(4, 'Mića', 'Mićković', 'mmića@gmail.com', 'mmića', 'mmića', 'mićina 50', '132132131', '');
+INSERT INTO `users` (`users_id`, `users_name`, `users_lastname`, `users_email`, `users_password`, `users_repassword`, `users_adress`, `users_phone`, `users_status`, `users_valid`) VALUES
+(5, 'Pera', 'Perić', 'ppera@gmail.com', '632e40c7dba47751e107ef2778163346', '632e40c7dba47751e107ef2778163346', 'perina 18', '464654654', '', 1),
+(9, 'Milka', 'Canić', 'mmilka@gmail.com', 'c0de3fff8a7d0cf0399a2ead5873b4be', 'c0de3fff8a7d0cf0399a2ead5873b4be', 'milikina 29', '41254785', '', 1);
 
 -- --------------------------------------------------------
 
