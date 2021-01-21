@@ -133,6 +133,10 @@ hr.navdropdown{
     background: rgb(165, 163, 163);
     color: #000;
 }
+#show_email:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
 /*-------------
  CAROUSEL SECTION
 ---------------*/

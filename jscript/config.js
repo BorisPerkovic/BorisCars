@@ -62,7 +62,36 @@ $(document).ready(function(){
         {
           $("#registryError").text("Niste popunili sva polja! Sva polja su obavezna!");
         }
-      });  
+      });
+
+/*===========================
+  FORGOT PASSWORD SECTION
+=============================*/      
+
+      $(document).on('click', '#show_email', function(){
+        $("#show_div").slideToggle("slow");
+      });
+
+      $("#forgot_passBtn").click(function(){
+        var forgot_email=$("#forgot_password").val();
+        if(forgot_email!="")
+        {
+          $.ajax({
+            url:"php/forgot_pass.php",
+            method:"POST",
+            data:{forgot_email:forgot_email},
+            success:function(response){
+              answer=JSON.parse(response);
+                $("input").val("");
+                $("#loginError").text(answer.error);  
+            }
+          });
+        }
+        else
+        {
+          $("#loginError").text("Niste popunili polje za E-mail za resetovanje lozinke!");
+        }
+      });
 
 /*============================
   SERVICE SECTION

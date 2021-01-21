@@ -100,6 +100,7 @@ if($_SESSION['admin_status']!="Administrator")
                 <option value="0">--Izaberite log fajl--</option>
                 <option value="korisnici.txt">Korisnici</option>
                 <option value="logovanja.txt">Logovanja</option>
+                <option value="zamena_lozinke.txt">Zamena lozinki</option>
                 <option value="proizvodi.txt">Proizvodi</option>
                 <option value="servisi.txt">Servisi</option>
                 <option value="test_vožnje.txt">Test vožnje</option>

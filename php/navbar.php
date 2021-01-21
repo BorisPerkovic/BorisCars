@@ -123,10 +123,13 @@
                     <input type="checkbox" name="remember" id="remember" class="form-check-input">
                     <label class="form-check-label d-flex">Zapamti me</label><br>
 
-                     <!--   <p class="font-small blue-text d-flex justify-content-center"><a href="" class="blue-text ml-1">Zaboravljena lozinka?</a></p>  -->
+                    <p class="font-small blue-text d-flex justify-content-center" id="show_email">Zaboravljena lozinka?</p>
 
+                        <div id="show_div" style="display: none;">
+                        <input type="text" class="form-control" name="forgot_password" id="forgot_password" placeholder="Unestite E-mail adresu"><br>
+                        <button class="btn log" id="forgot_passBtn">Resetuj lozinku</button><br><br>
+                        </div>
                         <p class="text-danger" id="loginError"></p>
-                
                 </div>
             </div>
                 <div class="modal-footer d-flex justify-content-center">
