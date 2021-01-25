@@ -37,10 +37,16 @@ if(isset($_POST['name']) and isset($_POST['lastname']) and isset($_POST['email']
             //Sending activation link on email
             $to = "$email";
             $subject = 'Potvrda registracije - boriscars.000webhostapp.com';
-            $headers = "From: BorisPerkovic <info@borisperkovic.rs"."\r\n";
-            $headers .= "MIME-Version: 1.0\r\n";
-            $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
             $message = "<p>Kliknite na link ispod da kompletirate registraciju<br><strong><a href='https://boriscars.000webhostapp.com/BorisCars/php/active_registry.php?users_email=$email&valid_number=$valid_number'>Link za aktivaciju</a></strong></p>";
+            $headers="";
+            $headers.="Reply-To: BorisPerkovic <info@borisperkovic.rs>"."\r\n"; 
+            $headers.="Return-Path: BorisPerkovic <info@borisperkovic.rs"."\r\n"; 
+            $headers.="From: BorisPerkovic <info@borisperkovic.rs>"."\r\n";
+            $headers.="Organization: BorisCars"."\r\n";
+            $headers.="MIME-Version: 1.0"."\r\n";
+            $headers.="Content-Type: text/html; charset=UTF-8"."\r\n";
+            $headers.="X-Priority: 3"."\r\n";
+            $headers.="X-Mailer: smail-PHP ".phpversion()."\r\n";
             mail($to, $subject, $message, $headers);
 
 
