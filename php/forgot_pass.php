@@ -25,16 +25,45 @@ if(isset($_POST['forgot_email']));
                 $db->query($sql);
                 if($db->affected_rows()==1)
                 {
-                    $output['error']="Uspešno ste izmenili lozinku. Podaci su poslati na Vašu E-mail adresu!";
 
-                    //Sending datas on email after changing the password
-                    $to = "$email";
-                    $subject = 'Zamena lozinke - boriscars.000webhostapp.com';
-                    $headers = "From: BorisPerkovic <info@borisperkovic.rs"."\r\n";
-                    $headers .= "MIME-Version: 1.0\r\n";
-                    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-                    $message = "<p>Uspešno ste izmenili lozinku.<br><br>Vaši podaci za prijavu su:<br><br>E-mail adresa: ".$email."<br><br>Nova lozinka: ".$valid_password."</p>";
-                    mail($to, $subject, $message, $headers);
+                    //Sending new password on email using SMTP PHP Mailer
+                    require 'PHPMailerAutoload.php';
+
+                    $mail = new PHPMailer;
+                    
+                    //$mail->SMTPDebug = 4;                               // Enable verbose debug output
+
+                    $mail->isSMTP();                                      // Set mailer to use SMTP
+                    $mail->Host = 'server host';                          // Specify main and backup SMTP servers
+                    $mail->SMTPAuth = true;                               // Enable SMTP authentication
+                    $mail->Username = 'email username';                   // SMTP username
+                    $mail->Password = 'email password';                   // SMTP password
+                    $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+                    $mail->Port = 587;                                    // TCP port to connect to
+
+                    $mail->setFrom('email username', 'BorisPerkovic');
+                    $mail->addAddress("$email");                          // Add a recipient
+                    $mail->addReplyTo('email username');
+
+                    /*$mail->addAttachment('/var/tmp/file.tar.gz');       //Add attachments
+                    $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name*/
+                    $mail->isHTML(true);                                  // Set email format to HTML
+
+                    $mail->Subject = 'Izmena lozinke - borisperkovic.rs';
+                    $mail->Body    = "<div>
+
+                                    <h4>Vaši podaci su:</h4><br>
+                                    <p>E-mail: $email<br>Lozinka: ".$_POST['pass']."</p>
+
+                                    </div>";
+
+                    if(!$mail->send()) {
+                        echo 'Zamena lozinke nije uspela nije uspelo.';
+                        echo 'greska: ' . $mail->ErrorInfo;
+                    }
+                    else {
+                        $output['error']="Uspešno ste izmenili lozinku. Podaci su poslati na Vašu E-mail adresu!";
+                    }
                    Log::upisiLog("../logs/zamena_lozinke.txt", "$email je uspešno promenio lozinku"); 
                 }
                 else

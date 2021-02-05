@@ -27,7 +27,7 @@ RewriteRule     Discovery                            discovery.php
 
 RewriteRule     Defender                             defender.php
 
-RewriteRule     Galerija                             defender.php
+RewriteRule     Galerija                             gallery.php
 
 RewriteRule     Istorija                             history.php
 

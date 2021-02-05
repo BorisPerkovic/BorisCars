@@ -793,6 +793,14 @@ ADMIN NAV SECTION
     
 }
 
+@media (max-width: 991px) {
+
+    body{
+        padding-top: 57px;
+    }
+    
+}
+
 @media (max-width: 780px) {
 
 .carousel-control-prev,

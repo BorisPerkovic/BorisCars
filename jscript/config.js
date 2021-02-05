@@ -14,7 +14,7 @@ $(document).ready(function(){
       if(username!="" && password!="")
       {
           $.ajax({
-          url:"php/logIn?login.php",
+          url:"php/logIn.php?login",
           method:"POST",
           data:{username:username, password:password, remember:remember},
           success:function(response){
