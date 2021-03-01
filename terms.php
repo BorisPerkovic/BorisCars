@@ -47,8 +47,8 @@ $db->connect();
     include("php/navbar.php");
 ?>
 
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
+<main class="jumbotron jumbotron-fluid">
+  <article class="container">
     <h1 class="display-4">Uslovi korišćenja</h1>
     <p class="lead">Poštovani,</p>
     <p class="lead">Ovaj projekat ili website je napravljen shodno vežbi tokom učenja programskog jezika PHP, kao i različitih tehnologija WEB programiranja kao što su HTML, CSS, Bootstrap, JavaScript i tako dalje.</p>
@@ -65,8 +65,8 @@ $db->connect();
     </ul>
     <p class="lead">Za sve dodatne infromacije možete me kontaktirati na E-mail borisperkovic89@yahoo.com, ili na broj telefona +381695382477</p>
     <p class="lead">Boris Perković</p>
-  </div>
-</div>
+  </article>
+</main>
 
 
 

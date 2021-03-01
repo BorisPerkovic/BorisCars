@@ -50,17 +50,17 @@ $db->connect();
 <!----------------------------
  AUTOBIOGRAPHY HERO 1 SECTION
 ------------------------------>
-<div class="container-fluid" id="hero1_autobiography">
+<section class="container-fluid" id="hero1_autobiography">
 
     <img src="pics/defender1.jpg" class="img-fluid" alt="Responsive image">
 
-</div>
+</section>
 
 
 <!------------------------
     CENTRAL HEADING 1
 -------------------------->
-<div class="container-fluid central_models1">
+<section class="container-fluid central_models1">
 
     <div class="row">
 
@@ -71,21 +71,21 @@ $db->connect();
     </div>
 
 
-</div>
+</section>
 
 <!------------------------
     HERO2 SECTION
 -------------------------->
 
-<div id="defender_parallax" class="container-fluid parallax-section">
+<section id="defender_parallax" class="container-fluid parallax-section">
 
-</div>
+</section>
 
 
 <!------------------------
     CENTRAL HEADING 2
 -------------------------->
-<div class="container-fluid central_models2">
+<section class="container-fluid central_models2">
 
     <div class="row">
 
@@ -96,49 +96,47 @@ $db->connect();
     </div>
 
 
-</div>
+</section>
 
 
 <!----------------------
     MAIN SECTION
 ----------------------->
-<div class="container-fluid models_main" >
+<section class="container-fluid models_main" >
 
-<div class="container">
+<article class="container">
     <div class="row">
 
-        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+        <article class="col-lg-6 col-md-6 col-sm-6 col-6">
             <img src="pics/defenderin1.jpg" class="img-fluid" alt="Responsive image">
             <h5>ALPSKA SVETLA</h5>
 			<p>Kao oda prošlosti, ova svetla pomažu da se kabina osvetli i daju vozilu poseban šarm.</p>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+        </article>
+        <article class="col-lg-6 col-md-6 col-sm-6 col-6">
             <img src="pics/defenderin2.jpg" class="img-fluid" alt="Responsive image">
             <h5>UDOBNOST I PRAKTIČNOST</h5>
 			<p>Uz Clear Sight tehnologiju, koja je uključena kao deo paketa 3D kružne kamere, vidljivost vašeg vozila kao i vaš pregled druma biće znatno unapređeni.</p>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+        </article>
+        <article class="col-lg-6 col-md-6 col-sm-6 col-6">
             <img src="pics/defenderin3.jpg" class="img-fluid" alt="Responsive image">
             <h5>VRHUNSKO OSVETLJENJE UNUTAR KABINE VOZILA</h5>
             <p>Premium osvetljenje daje mogućnost podešavanja rasvete u 10 opcija tako da vaše okruženje mođete uskladiti sa trenutnim raspoloženjem ili stilom vožnje.</p>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+        </article>
+        <article class="col-lg-6 col-md-6 col-sm-6 col-6">
             <img src="pics/defenderin4.jpg" class="img-fluid" alt="Responsive image">
             <h5>HGREJANJE I HLAĐENJE VAZDUHA</h5>
 			<p>Pored toga što vozilu pružaja dodatni komfor, funkcija grejanja i hlađenja sediđta obezbeđuje optimalnu sredinu za boravak na svakom putovanju.</p>
-        </div>
+        </article>
 
     </div>
-</div>
-    
+</article>
 
-
-</div>
+</section>
 
 <!------------------------
     CENTRAL HEADING 2
 -------------------------->
-<div class="container-fluid central_models2">
+<section class="container-fluid central_models2">
 
     <div class="row">
 
@@ -149,7 +147,7 @@ $db->connect();
     </div>
 
 
-</div>
+</section>
 
 
 
@@ -157,38 +155,36 @@ $db->connect();
 <!----------------------
     MAIN SECTION
 ----------------------->
-<div class="container-fluid models_main" >
+<section class="container-fluid models_main" >
 
-<div class="container">
+<article class="container">
     <div class="row">
 
-        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+        <article class="col-lg-6 col-md-6 col-sm-6 col-6">
             <img src="pics/defenderper.jpg" class="img-fluid" alt="Responsive image">
             <h5>TESTIRANJE</h5>
 			<p>Defender je konstruisan da izdrži ekstremne uslove i ponavljajuće izazove.</p>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+        </article>
+        <article class="col-lg-6 col-md-6 col-sm-6 col-6">
             <img src="pics/defenderper1.jpg" class="img-fluid" alt="Responsive image">
             <h5>FRONTALNI UNDERSHIELD (PODVLAKA)</h5>
 			<p>Krećite se sigurno gde god da idete, donji sloj Vas štiti od opasnih terena ispod vas.</p>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+        </article>
+        <article class="col-lg-6 col-md-6 col-sm-6 col-6">
             <img src="pics/defenderper3.jpg" class="img-fluid" alt="Responsive image">
             <h5>CHEQUER ZAŠTITNA OPREMA</h5>
 			<p>Uživajte u svojoj avanturi bez brige da ćete oštetiti spoljnu farbu na vozilu. Ovaj komplet poseduje dodatnu zaštitu za Defender-ov eksterijer.</p>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+        </article>
+        <article class="col-lg-6 col-md-6 col-sm-6 col-6">
             <img src="pics/defenderrper5.jpg" class="img-fluid" alt="Responsive image">
             <h5>ZAŠTITNA ŠIPKA U OBLIKU SLOVA "A"</h5>
 			<p>Povećava zaštitu od oštećenja na prednjem delu Defender-a, kao i poboljšanje izgleda vozila.</p>
-        </div>
+        </article>
 
     </div>
-</div>
+</article>
     
-
-
-</div>
+</section>
 
 
 <?php

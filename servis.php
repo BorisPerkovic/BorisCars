@@ -51,14 +51,14 @@ $db->connect();
     SERVIS PARALLAX
 -------------------------->
 
-<div id="servis_parallax" class="container-fluid parallax-section">
+<section id="servis_parallax" class="container-fluid parallax-section">
 
-</div>
+</section>
 
 <!---------------------------
 CENTRAL HEADING SERVIS
 ---------------------------->
-<div class="container-fluid central_models1">
+<section class="container-fluid central_models1">
 
     <div class="row">
 
@@ -69,19 +69,19 @@ CENTRAL HEADING SERVIS
     </div>
 
 
-</div>
+</section>
 
 <!------------------------
     SERVIS SECTION
 -------------------------->
 
-<div class="container-fluid" id="servis">
+<main class="container-fluid" id="servis">
 
-    <div class="container">
+    <section class="container">
 
         <div class="row">
 
-            <div class="col-md-6">
+            <article class="col-md-6">
                 <h5>Popunite formular i zakažite servis</h5><br><br>
                 <p>Unesite Vaše ime*</p>
                 <input type="text" class="form-control" id="service_name" name="service_name"><br><br>
@@ -102,17 +102,14 @@ CENTRAL HEADING SERVIS
                 <p>Ukratko opišite kvar(maksimalno 150 karaktera)*</p>
                 <textarea class="form-control" id="service_describe" name="service_describe"></textarea><br><br>
                 <button class="btn" id="servis_btn">Zakažite servis</button><br><br>
-            </div>
+            </article>
             <div class="col-md-12" id="error">
 
             </div>
         </div>
-    </div>
-    </div>
-
+    </section>
     
-
-</div>
+</main>
 
 
 

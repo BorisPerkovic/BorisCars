@@ -51,14 +51,14 @@ $db->connect();
     RESPONSIBLE PARALLAX
 -------------------------->
 
-<div id="responsible_parallax" class="container-fluid parallax-section">
+<section id="responsible_parallax" class="container-fluid parallax-section">
 
-</div>
+</section>
 
 <!---------------------------
 CENTRAL HEADING RESPONSIBLE
 ---------------------------->
-<div class="container-fluid central_models1">
+<section class="container-fluid central_models1">
 
     <div class="row">
 
@@ -69,24 +69,24 @@ CENTRAL HEADING RESPONSIBLE
     </div>
 
 
-</div>
+</section>
 
 <!------------------------
     RESPONSIBLE SECTION
 -------------------------->
 
-<div class="container-fluid" id="responsible">
+<section class="container-fluid" id="responsible">
 
-    <div class="container">
+    <article class="container">
 
         <div class="row">
-                <div class="col-md-6 p-2 w-100">
+                <article class="col-md-6 p-2 w-100">
                     <h2>Zalažemo se da odgovorno i održivo razvijamo svoje poslovanje, tako da možemo dodati vrednost našim kupcima, kompaniji i široj privredi.</h2>
                     <p>DR RALF SPETH</p>
                     <p>CEO, JAGUAR LAND ROVER</p>
-                </div>
+                </article>
         
-                <div class="col-md-6">
+                <article class="col-md-6">
                     <div class="row">
 
                         <div class="col-md-6 col-sm-6">
@@ -107,43 +107,42 @@ CENTRAL HEADING RESPONSIBLE
                         </div>
 
                     </div>   
-                </div>
+                </article>
                 
         </div>
 
-    </div>
+    </article>
 
-</div>
+</section>
 
 <main id="responsible_main">
 
-<div class="container-fluid">
+<section class="container-fluid">
 
-    <div class="row">
-        <div class="col-lg-5 col-md-5   text-center">
+    <div class="row align-items-center">
+        <article class="col-lg-5 col-md-5   text-center">
             <h4>ODGOVORNOST PREMA ŽIVOTNOJ SREDINI</h4>
             <p>Ekološki uticaj našeg poslovanja nije ograničen na naše objekte. U stvari, uticaji u našem lancu snabdevanja su veći. Stoga ohrabrujemo naše dobavljače da se pridržavaju istih visokih standarda održivosti kao što smo ih i sami postavili. I blisko sarađujemo sa njima kako bismo smanjili negativan uticaj proizvoda koje kupujemo na životnu sredinu.</p>
-        </div>
+        </article>
 
-        <div class="col-lg-7 col-md-7   responsible_img">
+        <article class="col-lg-7 col-md-7   responsible_img">
             <img src="pics/solar.jpg" class="img-fluid" alt="Responsive image">
-        </div>
+        </article>
     </div>
 
 
-    <div class="row">
-        <div class="col-lg-7 col-md-7  responsible_img">
+    <div class="row align-items-center">
+        <article class="col-lg-7 col-md-7  responsible_img">
             <img src="pics/robot.jpg" class="img-fluid" alt="Responsive image">
-        </div>
+        </article>
 
-        <div class="col-lg-5 col-md-5  text-center">
+        <article class="col-lg-5 col-md-5  text-center">
             <h4>INSPIRIŠEMO INŽENJERE SUTRAŠNJICE</h4>
             <p>Mi smo posvećeni da sledećoj generaciji inženjera pružimo sredstva i veštine da bi pružili novi talas inovacija. Do sada je preko 200.000 dece učestotvalo u programima Tomorrow's Engineers. Takođe, stvaramo mogućnosti da se talentovani mladi pridruže našim Appretinceship programima.</p>
-        </div>
+        </article>
     </div>
 
-</div>
-
+</section>
 
 </main>
 

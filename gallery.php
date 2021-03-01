@@ -48,8 +48,8 @@ $db->connect();
     include("php/navbar.php");
 ?>
 
-<div class="container-fluid">
-        <div class="gallery">
+<section class="container-fluid">
+        <article class="gallery">
             <a href="images/autobiography-1.jpg" data-lightbox="mygallery"><img src="images/autobiography-1-small.jpg" class="img-fluid" alt="Responsive image"></a>
             <a href="images/autobiography-2.jpg" data-lightbox="mygallery"><img src="images/autobiography-2-small.jpg"  class="img-fluid" alt="Responsive image"></a>
             <a href="images/autobiography-3.jpg" data-lightbox="mygallery"><img src="images/autobiography-3-small.jpg"  class="img-fluid" alt="Responsive image"></a>
@@ -74,8 +74,8 @@ $db->connect();
             <a href="images/velar-4.jpg" data-lightbox="mygallery"><img src="images/velar-4-small.jpg" class="img-fluid" alt="Responsive image"></a>
             <a href="images/velar-5.jpg" data-lightbox="mygallery"><img src="images/velar-5-small.jpg" class="img-fluid" alt="Responsive image"></a>
             <a href="images/velar-7.jpg" data-lightbox="mygallery"><img src="images/velar-7-small.jpg" class="img-fluid" alt="Responsive image"></a>
-        </div>
-</div>
+        </article>
+</section>
 
 
 <?php

@@ -51,14 +51,14 @@ $db->connect();
     TEST DRIVE PARALLAX
 -------------------------->
 
-<div id="testDrive_parallax" class="container-fluid parallax-section">
+<section id="testDrive_parallax" class="container-fluid parallax-section">
 
-</div>
+</section>
 
 <!---------------------------
 CENTRAL HEADING TEST DRIVE
 ---------------------------->
-<div class="container-fluid central_models1">
+<section class="container-fluid central_models1">
 
     <div class="row">
 
@@ -69,19 +69,19 @@ CENTRAL HEADING TEST DRIVE
     </div>
 
 
-</div>
+</section>
 
 <!------------------------
     TEST DRIVE SECTION
 -------------------------->
 
-<div class="container-fluid" id="test_drive">
+<main class="container-fluid" id="test_drive">
 
-    <div class="container">
+    <section class="container">
 
         <div class="row">
 
-            <div class="col-md-6">
+            <article class="col-md-6">
                 <h5>Popunite formular i zakažite test vožnju</h5><br><br>
                 <p>Unesite Vaše ime*</p>
                 <input type="text" class="form-control" id="testDrive_name" name="testDrive_name"><br><br>
@@ -96,17 +96,14 @@ CENTRAL HEADING TEST DRIVE
 
                 </select><br><br>
                 <button class="btn" id="testDrive_btn">Zakažite vožnju</button><br><br>
-            </div>
+            </article>
             <div class="col-md-12" id="drive_error">
 
             </div>
         </div>
-    </div>
-    </div>
+    </section>
 
-    
-
-</div>
+</main>
 
 
 

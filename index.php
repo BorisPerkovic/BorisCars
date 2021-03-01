@@ -52,7 +52,7 @@ $db->connect();
     CAROUSEL SECTION
 -------------------------->
 
-<div class="container-fluid carousel">
+<section class="container-fluid carousel">
 
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 
@@ -103,14 +103,14 @@ $db->connect();
 
 </div>
 
-</div>
+</section>
 
 
 <!------------------------
     CENTRAL HEADING 1
 -------------------------->
 
-<div class="container-fluid central1">
+<section class="container-fluid central1">
 
     <div class="row">
 
@@ -122,22 +122,22 @@ $db->connect();
     </div>
 
 
-</div>
+</section>
 
 <!------------------------
     HERO SECTION
 -------------------------->
 
-<div id="hero" class="container-fluid parallax-section">
+<section id="hero" class="container-fluid parallax-section">
 
-</div>
+</section>
 
 
 <!------------------------
     CENTRAL HEADING 2
 -------------------------->
 
-<div class="container-fluid central2">
+<section class="container-fluid central2">
 
     <div class="row">
 
@@ -149,7 +149,7 @@ $db->connect();
     </div>
 
 
-</div>
+</section>
 
 
 <!------------------------
@@ -157,7 +157,7 @@ $db->connect();
 -------------------------->
 <main id="main">
 
-<div class="container">
+<section class="container">
 
    <div class="row">
 
@@ -166,7 +166,7 @@ $db->connect();
             -------->
         
         <!--Autobiography-->
-        <div class="col-lg-4 col-md-4 col-sm-6 col-6" style="margin-bottom: 40px">
+        <article class="col-lg-4 col-md-4 col-sm-6 col-6" style="margin-bottom: 40px">
             <div class="card shadow border-light h-100">
                 <div class="inner">
                     <a href="Autobiography"><img src="pics/autobiography.jpg" class="card-img-top img-fluid" alt="Responsive image"></a>
@@ -179,10 +179,10 @@ $db->connect();
                     <p class="card-text">&#62;&nbsp;Izvandredne performanse</p>
                 </div>
             </div>
-        </div>
+        </article>
         
         <!--Sport-->
-        <div class="col-lg-4 col-md-4 col-sm-6 col-6" style="margin-bottom: 40px">
+        <article class="col-lg-4 col-md-4 col-sm-6 col-6" style="margin-bottom: 40px">
             <div class="card shadow border-light h-100">
                 <div class="inner">
                     <a href="Sport"><img src="pics/sport.jpg" class="card-img-top img-fluid " alt="Responsive image"></a>
@@ -195,10 +195,10 @@ $db->connect();
                     <p class="card-text">&#62;&nbsp;Luksuzan, izuzetno udoban</p>
                 </div>
             </div>
-        </div>
+        </article>
 
         <!--Velar-->
-        <div class="col-lg-4 col-md-4 col-sm-6 col-6" style="margin-bottom: 40px">
+        <article class="col-lg-4 col-md-4 col-sm-6 col-6" style="margin-bottom: 40px">
             <div class="card shadow border-light h-100">
                 <div class="inner">
                     <a href="Velar"><img src="pics/velar.jpg" class="card-img-top img-fluid" alt="Responsive image"></a>
@@ -211,10 +211,10 @@ $db->connect();
                     <p class="card-text">&#62;&nbsp;Integrisan zadnji spojler</p>
                 </div>
             </div>
-        </div>
+        </article>
 
         <!--Evoque-->
-        <div class="col-lg-4 col-md-4 col-sm-6 col-6" style="margin-bottom: 40px">
+        <article class="col-lg-4 col-md-4 col-sm-6 col-6" style="margin-bottom: 40px">
             <div class="card shadow border-light h-100">
                 <div class="inner">
                     <a href="Evoque"><img src="pics/evoque.jpg" class="card-img-top img-fluid" alt="Responsive image"></a>
@@ -227,10 +227,10 @@ $db->connect();
                     <p class="card-text">&#62;&nbsp;Spreman za 21-vi vek</p>
                 </div>
             </div>
-        </div>
+        </article>
 
         <!--Discovery-->
-        <div class="col-lg-4  col-md-4 col-sm-6 col-6" style="margin-bottom: 40px">
+        <article class="col-lg-4  col-md-4 col-sm-6 col-6" style="margin-bottom: 40px">
             <div class="card shadow border-light h-100">
                 <div class="inner">
                     <a href="Discovery"><img src="pics/discovery.jpg" class="card-img-top img-fluid" alt="Responsive image"></a>
@@ -243,10 +243,10 @@ $db->connect();
                     <p class="card-text">&#62;&nbsp;Toucn Pro infotainment sistem</p>
                 </div>
             </div>
-        </div>
+        </article>
 
         <!--Defender-->
-        <div class="col-lg-4 col-md-4 col-sm-6 col-6" style="margin-bottom: 40px">
+        <article class="col-lg-4 col-md-4 col-sm-6 col-6" style="margin-bottom: 40px">
             <div class="card shadow border-light h-100">
                 <div class="inner">
                     <a href="Defender"><img src="pics/defenderper4.jpg" class="card-img-top img-fluid" alt="Responsive image"></a>
@@ -259,11 +259,11 @@ $db->connect();
                     <p class="card-text">&#62;&nbsp;Bezprekoran integritet.</p>
                 </div>
             </div>
-        </div>
+        </article>
 
     </div>
 
-</div>
+</section>
 
 </main>
 

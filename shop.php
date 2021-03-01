@@ -51,14 +51,14 @@ $db->connect();
     SHOP PARALLAX
 -------------------------->
 
-<div id="shop_parallax" class="container-fluid parallax-section">
+<section id="shop_parallax" class="container-fluid parallax-section">
 
-</div>
+</section>
 
 <!---------------------------
 CENTRAL HEADING SHOP
 ---------------------------->
-<div class="container-fluid central_models1">
+<section class="container-fluid central_models1">
 
     <div class="row">
 
@@ -69,23 +69,23 @@ CENTRAL HEADING SHOP
     </div>
 
 
-</div>
+</section>
 
 <!------------------------
     SHOP SECTION
 -------------------------->
 
-<div class="container-fluid" id="shop">
+<main class="container-fluid" id="shop">
 
-    <div class="container">
+    <section class="container">
 
-        <div class="row" id="shop_row">
+        <article class="row" id="shop_row">
             
-        </div>
+        </article>
 
-    </div>
+    </section>
 
-</div>
+</main>
 
 
 

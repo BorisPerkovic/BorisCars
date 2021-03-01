@@ -50,7 +50,7 @@ $db->connect();
 <!---------------------------
 CENTRAL HEADING BASKET
 ---------------------------->
-<div class="container-fluid" id="basket">
+<section class="container-fluid" id="basket">
 
     <div class="row">
 
@@ -61,13 +61,13 @@ CENTRAL HEADING BASKET
     </div>
 
 
-</div>
+</section>
 
 <!------------------------
     BASKET SECTION
 -------------------------->
 
-<div class="container-fluid" id="basket_section">
+<section class="container-fluid" id="basket_section">
 
     <div class="container">
 
@@ -76,7 +76,7 @@ CENTRAL HEADING BASKET
         </div>
     </div>
 
-</div>
+</section>
 
 
 
