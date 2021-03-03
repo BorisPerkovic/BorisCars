@@ -63,7 +63,7 @@ CENTRAL HEADING HISTORY
     <div class="row">
 
         <div class="col-md-12 text-center">
-			<h1>ISTORIJAT LAND ROVER VOZILA</h1>
+			<h2 class="display-4">ISTORIJAT LAND ROVER VOZILA</h2>
         </div>
 
     </div>
@@ -81,7 +81,7 @@ CENTRAL HEADING HISTORY
     <div class="row">
 
         <article class="col-md-12">
-            <p class="font-weight-bold">Od lansiranja prvog Range Rover modela davne 1970-te, ovo vozilo se kontinuirano razvija. Najluksuznijeg sportskog terenca (SUV) na svetu odlikuju izvanredni nivoi sofisticiranosti, performansi, dizajna i naravno tehnološki napretci koji čine da se ovo vozilo izdvaja od drugih. Sada ćemo se osvrnuti na istoriju serije luksuznih sportskih terenaca poznatih pod imenom "Range Rover porodica".</p>
+            <p class="lead">Od lansiranja prvog Range Rover modela davne 1970-te, ovo vozilo se kontinuirano razvija. Najluksuznijeg sportskog terenca (SUV) na svetu odlikuju izvanredni nivoi sofisticiranosti, performansi, dizajna i naravno tehnološki napretci koji čine da se ovo vozilo izdvaja od drugih. Sada ćemo se osvrnuti na istoriju serije luksuznih sportskih terenaca poznatih pod imenom "Range Rover porodica".</p>
             <h5>1969 - Prototip Range Rover Velar</h5>
             <p>Kako bi sačuvali prototip prvog Range Rover vozila kao strogo čuvanu tajnu, dizajneri i inženjeri koji su radili na ovom revolucionarnom novom vozilu dali su mu ime "Velar" - reč vodi poreklo od italijanske reči "velare" što znači veo ili prekrivka. Prvih 26 prototipa je čak imalo i ovaj bedž kako bi se zamaskirao njihov identitet.</p>
             <img src="pics/his.jpg" class="img-fluid" alt="Responsive image">

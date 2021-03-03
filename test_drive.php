@@ -63,7 +63,7 @@ CENTRAL HEADING TEST DRIVE
     <div class="row">
 
         <div class="col-md-12 text-center">
-			<h1>ZAKAZIVANJE TEST VOŽNJE</h1>
+			<h2 class="display-4">ZAKAZIVANJE TEST VOŽNJE</h2>
         </div>
 
     </div>

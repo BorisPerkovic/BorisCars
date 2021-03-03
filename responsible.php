@@ -63,7 +63,7 @@ CENTRAL HEADING RESPONSIBLE
     <div class="row">
 
         <div class="col-md-12 text-center">
-			<h1>ODGOVORNO POSLOVANJE</h1>
+			<h2 class="display-4">ODGOVORNO POSLOVANJE</h2>
         </div>
 
     </div>

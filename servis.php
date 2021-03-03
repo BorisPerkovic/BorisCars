@@ -63,7 +63,7 @@ CENTRAL HEADING SERVIS
     <div class="row">
 
         <div class="col-md-12 text-center">
-			<h1>ZAKAZIVANJE SERVISA</h1>
+			<h2 class="display-4">ZAKAZIVANJE SERVISA</h2>
         </div>
 
     </div>

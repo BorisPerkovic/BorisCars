@@ -115,8 +115,8 @@ $db->connect();
     <div class="row">
 
         <div class="col-md-12 text-center">
-			<h1>PORODICA RANGE ROVER VOZILA</h1>
-			<p>Zaostavština bez premca.</p>
+			<h2 class="display-4">PORODICA RANGE ROVER VOZILA</h2>
+			<p class="lead">Zaostavština bez premca.</p>
         </div>
 
     </div>
@@ -142,8 +142,8 @@ $db->connect();
     <div class="row">
 
         <div class="col-md-12 text-center">
-			<h1>NAŠA VOZILA</h1>
-			<p>Upoznajte porodicu Land Rover automobila</p>
+			<h2 class="display-4">NAŠA VOZILA</h2>
+			<p class="lead">Upoznajte porodicu Land Rover automobila</p>
         </div>
 
     </div>

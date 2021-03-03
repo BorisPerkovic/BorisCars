@@ -65,7 +65,7 @@ $db->connect();
     <div class="row">
 
         <div class="col-md-12 text-center">
-			<h1>TEHNOLOGIJE</h1>
+			<h2 class="display-4">TEHNOLOGIJE</h2>
         </div>
 
     </div>
@@ -90,7 +90,7 @@ $db->connect();
     <div class="row">
 
         <div class="col-md-12 text-center">
-			<h1>INOVATIVNOST</h1>
+			<h2 class="display-4">INOVATIVNOST</h2>
         </div>
 
     </div>
@@ -141,7 +141,7 @@ $db->connect();
     <div class="row">
 
         <div class="col-md-12 text-center">
-            <h1>PERFORMANSE</h1>
+            <h2 class="display-4">PERFORMANSE</h2>
         </div>
 
     </div>

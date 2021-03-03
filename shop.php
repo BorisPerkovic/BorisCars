@@ -63,7 +63,7 @@ CENTRAL HEADING SHOP
     <div class="row">
 
         <div class="col-md-12 text-center">
-			<h1>AKSESOARI</h1>
+			<h2 class="display-4">AKSESOARI</h2>
         </div>
 
     </div>

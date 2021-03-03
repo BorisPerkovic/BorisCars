@@ -55,7 +55,7 @@ CENTRAL HEADING BASKET
     <div class="row">
 
         <div class="col-md-12 text-center">
-			<h1>KORPA</h1>
+			<h2 class="display-4">KORPA</h2>
         </div>
 
     </div>
